@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta name="description" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="">
-  <link rel="icon" href="">
-  <link rel="apple-touch-icon" sizes="180x180" href="">
-  <meta name="theme-color" content="#000">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="">
+	<link rel="icon" href="">
+	<link rel="apple-touch-icon" sizes="180x180" href="">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts/GothamPro.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
+
+
 </head>
 <body>
-	
+<header class="header">
+	<nav class="menu">
+		<div class="menu__desktop">
+			<div class="menu__logo">
+				<a href="#"><img src="img/logo.png" alt="logo"></a>
+			</div>
 
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="js/wow.min.js" ></script>
+			<div>
+				<ul class="menu__items-wrap">
+					<li class="menu__item active"><a href="#">Главная</a></li>
+					<li class="menu__item"><a href="#">Услуги</a></li>
+					<li class="menu__item"><a href="#">Портфолио</a></li>
+					<li class="menu__item"><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="menu__language-wrap">
+				<div class="menu__language-item">Eng</div>
+				<div class="menu__language-item active">Ru</div>
+			</div>
+		</div>
+
+		<div class="menu__mobile">
+			<div class="menu__logo">
+				<a href="#"><img src="img/logo.png" alt="logo"></a>
+			</div>
+
+			<div class="menu__hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<div class="menu__right">
+				<div class="menu__close">
+					<span class="menu__close-icon">close</span>
+				</div>
+				<ul class="menu__items-wrap">
+					<li class="menu__item active"><a href="#">Главная</a></li>
+					<li class="menu__item"><a href="#">Услуги</a></li>
+					<li class="menu__item"><a href="#">Портфолио</a></li>
+					<li class="menu__item"><a href="#">Контакты</a></li>
+				</ul>
+				<div class="menu__language-wrap">
+					<div class="menu__language-item">Eng</div>
+					<div class="menu__language-item active">Ru</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="banner full-height-window">
+			<div class="banner__content">
+				<div class="banner__title">Предоставляем комплексные IT решения <span class="banner__title-bold">для вашего бизнеса.</span>
+				</div>
+				<div class="banner__desc">Международная компания с фокусом на разработку, проектирование, дизайн и
+					тестирование продукта.
+				</div>
+				<div class="banner_btn"><a href="#" class="a-btn-1">Есть проект?</a></div>
+			</div>
+		</div>
+	</div>
+
+	<img src="img/red.svg" alt="" class="header__svg">
+</header>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

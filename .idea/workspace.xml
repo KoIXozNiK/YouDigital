@@ -2,7 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="520f1d13-1a87-485b-a985-a4433ceab6ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamPro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Icon&#10;" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/fonts/GothamPro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/Icon&#10;" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/media.sass" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +53,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="127">
+              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/fonts/GothamPro.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -27,8 +95,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>../fonts/</find>
+      <find>full</find>
+      <find>headerH</find>
+      <find>$while</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>../../fonts/GothamPro/</replace>
+      <replace>menuH</replace>
+      <replace>$white</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,13 +120,18 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/css/fonts/GothamPro.css" />
+        <option value="$PROJECT_DIR$/app/js/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/sass/main.sass" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1926" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
     <option name="y" value="360" />
-    <option name="width" value="1516" />
+    <option name="width" value="1360" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,6 +147,35 @@
               <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
               <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YouDigital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YouDigital" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -70,12 +186,21 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/css" />
+      <recent name="$PROJECT_DIR$/app/img" />
+      <recent name="$PROJECT_DIR$/app/fonts" />
+      <recent name="$PROJECT_DIR$/app/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/css" />
+      <recent name="$PROJECT_DIR$/app/img" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
@@ -101,15 +226,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554802968090</updated>
-      <workItem from="1554802970468" duration="935000" />
+      <workItem from="1554802970468" duration="18409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="935000" />
+    <option name="totallyTimeSpent" value="18409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="360" width="1360" height="745" extended-state="6" />
+    <frame x="1920" y="360" width="1360" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -146,8 +271,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="120">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/jquery.fullpage.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.eot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.ttf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5451" />
+      </provider>
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/pado.loc/wp-content/themes/pado/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/pado.loc/wp-content/themes/pado/assets/css/blog.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/pado.loc/wp-content/themes/pado/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="86841" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/img/red.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/all.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31517" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/fonts/GothamPro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
         </state>
       </provider>
     </entry>
