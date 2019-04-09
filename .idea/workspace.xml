@@ -2,48 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="520f1d13-1a87-485b-a985-a4433ceab6ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamPro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlack/GothamProBlack.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBlackItalic/GothamProBlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBold/GothamProBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProItalic/GothamProItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLight/GothamProLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProLightItalic/GothamProLightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMedium/GothamProMedium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProMediumItalic/GothamProMediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/GothamPro/GothamProRegular/GothamProRegular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/js/wow.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Icon&#10;" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/fonts/GothamPro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/Icon&#10;" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/jquery-3.3.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/media.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/media.sass" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +19,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="237">
+              <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+              <folding>
+                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
+            <state relative-caret-position="427">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -74,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/fonts/GothamPro.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="325">
+              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -83,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="240">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -105,11 +74,15 @@
       <find>full</find>
       <find>headerH</find>
       <find>$while</find>
+      <find>services_item</find>
+      <find>desc</find>
     </findStrings>
     <replaceStrings>
       <replace>../../fonts/GothamPro/</replace>
       <replace>menuH</replace>
       <replace>$white</replace>
+      <replace>services__item</replace>
+      <replace>services__desc</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,13 +95,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/css/fonts/GothamPro.css" />
         <option value="$PROJECT_DIR$/app/js/jquery-3.3.1.min.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
     <option name="y" value="360" />
     <option name="width" value="1360" />
@@ -226,15 +199,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554802968090</updated>
-      <workItem from="1554802970468" duration="18409000" />
+      <workItem from="1554802970468" duration="26967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18409000" />
+    <option name="totallyTimeSpent" value="26967000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="360" width="1360" height="745" extended-state="0" />
+    <frame x="1920" y="360" width="1360" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -243,7 +216,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -324,31 +297,37 @@
         <state relative-caret-position="-31517" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/fonts/GothamPro.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="325">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="237">
+          <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
+        <state relative-caret-position="427">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
         </state>
       </provider>
     </entry>
