@@ -37,7 +37,7 @@
 
 
   /***************/
-  /* MOBILE MENU */
+  /* LANGUAGE */
   /***************/
 
   function changeLanguage(){
@@ -49,6 +49,20 @@
     }
   }
 
+  /************/
+  /* LANGUAGE */
+  /************/
+  function goBot() {
+    if($('.go_to').length) {
+      $('.go_to').on("click", function () {
+        let bannerHeight = $('.to').offset();
+        $('html, body').animate({
+          'scrollTop': bannerHeight.top - 30
+        }, 1100);
+      });
+    }
+  }
+
   /**********************************/
   /* FUNCTION INITIALIZATION */
   /**********************************/
@@ -56,6 +70,7 @@
     fullHeightSection(),
     mobileMenu()
     changeLanguage()
+    goBot()
   });
 
   $(window).on('load resize', function () {
@@ -64,6 +79,7 @@
 
   $(window).on('resize', function () {
     mobileMenu()
+    goBot()
   });
 
   $(window).on('scroll', function () {

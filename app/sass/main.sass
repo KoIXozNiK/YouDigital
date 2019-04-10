@@ -2,6 +2,7 @@ $dark_bg: #121212
 $white: #fff
 $red: rgb(168, 22, 26)
 $dark: #000
+$gray: rgb(247, 247, 247)
 $transition: all .35s ease
 
 *
@@ -10,10 +11,17 @@ $transition: all .35s ease
 a:hover
   text-decoration: none
 
+.body
+  overflow: hidden
+
+
+/*********************/
+/****** BUTTON *******/
+/*********************/
 .a-btn-1
   background-color: transparent
   border: 2px solid $red
-  color: white
+  color: $white
   padding: 18px 66px
   border-radius: 27.5px
   transition: $transition
@@ -30,41 +38,76 @@ a:hover
     background-position: left bottom
     color: white
 
+.a-btn-2
+  border: 2px solid $red
+  padding: 18px 66px
+  border-radius: 27.5px
+  transition: $transition
+  color: $dark
+  background-color: transparent
+  border-color: $red
+  border-width: 1px
+  border-style: solid
+  background-size: 200% 100%
+  background-position: right bottom
+
+  &:hover
+    background-color: $red
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, $red), color-stop(50%, transparent))
+    background-image: linear-gradient(to right, $red 50%, transparent 50%)
+    color: $white
+    background-position: left bottom
+
+/*********************/
+/****** HEADINGS *******/
+/*********************/
 .heading
   position: relative
   padding-bottom: 45px
   margin-bottom: 110px
 
-
-  &-title
+  span
     font-size: 53px
     color: $dark
     line-height: 0.7
-    font-family: "GothamProBlack"
     text-transform: uppercase
     display: inline-block
     position: relative
 
-    &::after
-      left: calc(100% + 30px)
-      top: 50%
-      border: solid transparent
-      content: " "
-      height: 0
-      width: 0
-      position: absolute
-      pointer-events: none
-      border-color: rgba(18, 18, 18, 0)
-      border-left-color: $dark
-      border-width: 25px
-      margin-top: -25px
-      top: 0
-      transform: rotate(-45deg)
+  &-title
+    font-family: "GothamProBlack"
+
+    &-light
+      padding-bottom: 25px
+
+    &-wrap
+      display: inline-block
+      position: relative
+
+      &::after
+        left: calc(100% + 30px)
+        border: solid transparent
+        content: " "
+        height: 0
+        width: 0
+        position: absolute
+        pointer-events: none
+        border-color: rgba(18, 18, 18, 0)
+        border-left-color: $dark
+        border-width: 25px
+        margin-top: -25px
+        top: 0
+        transform: rotate(-45deg)
 
   &::before
-    content: url("../img/img.png")
+    content: ''
     display: block
-    margin-bottom: 30px
+    background-image: url(../img/img.png)
+    background-repeat: no-repeat
+    height: 280px
+    width: 4px
+    position: absolute
+    top: calc(-280px - 30px)
 
   &::after
     content: ''
@@ -75,6 +118,49 @@ a:hover
     bottom: 0
     left: -60px
     border-radius: 5px
+
+  @media all and (max-width: 1440px)
+    span
+      font-size: 40px
+
+    &-title
+
+      &::after
+        border-width: 23px
+        margin-top: -23px
+
+  @media all and (max-width: 991px)
+    margin-bottom: 80px
+    padding-bottom: 30px
+
+  @media all and (max-width: 767px)
+    margin-bottom: 80px
+    padding-bottom: 20px
+
+    span
+      font-size: 34px
+
+    &-title
+      &::after
+        border-width: 18px
+        margin-top: -18px
+        left: calc(100% + 18px)
+
+    &::before
+      margin-bottom: 30px
+      height: 180px
+      width: 3px
+      top: calc(-180px - 30px)
+
+    &::after
+      width: 80px
+      height: 6px
+      left: -40px
+      border-radius: 3px
+
+  @media all and (max-width: 550px)
+    &::after
+      left: 0
 /*********************/
 /****** HEADER *******/
 /*********************/
@@ -122,13 +208,32 @@ a:hover
     border-width: 85px
     margin-left: -85px
 
+@media all and (max-width: 1199px)
+  .header
+    &::after
+      border-width: 65px
+      margin-left: -65px
 
+    &__arrow
+      bottom: -50px
+      font-size: 35px
 
 @media all and (max-width: 991px)
   .header
     background-position: -30% 140% ,100% 140%
     background-size: 50%
 
+@media all and (max-width: 767px)
+  .header
+    margin-bottom: 45px
+
+    &::after
+      border-width: 45px
+      margin-left: -45px
+
+    &__arrow
+      bottom: -39px
+      font-size: 30px
 
 @media all and (max-width: 500px)
   .header
@@ -442,6 +547,21 @@ a:hover
 /***********************/
 
 .services
+  background-repeat: no-repeat
+  background-position: 120% 75vh
+  position: relative
+  padding-top: 310px
+
+  &::after
+    content: url(../img/black.svg)
+    display: block
+    position: absolute
+    left: 66vw
+    top: 67vh
+    width: 750px
+    transform: rotate(-90deg)
+    z-index: -5
+
   &__items
     display: grid
     grid-template-columns: repeat(4, 1fr)
@@ -453,6 +573,9 @@ a:hover
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
+    margin-bottom: 70px
+    z-index: 1
+    position: relative
 
   &__desc
     font-size: 23px
@@ -472,3 +595,223 @@ a:hover
       bottom: 0
 
 
+@media all and (max-width: 991px)
+  .services
+    padding: 310px 15px 0
+
+    &__items
+      grid-gap: 25px
+
+    &__item
+      margin-bottom: 40px
+
+    &__desc
+      font-size: 18px
+      margin-top: 30px
+
+@media all and (max-width: 767px)
+  .services
+    padding-top: 210px
+
+    &__items
+      grid-template-columns: repeat(3, 1fr)
+
+@media all and (max-width: 550px)
+  .services
+    &::after
+      top: 87vh
+
+    &__items
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 15px
+
+@media all and (max-width: 375px)
+  .services
+    &__item
+      margin-bottom: 20px
+
+    &__desc
+      font-size: 16px
+      margin-top: 20px
+
+
+
+/********************/
+/****** FACTS *******/
+/********************/
+
+.facts
+  padding-top: 360px
+  position: relative
+
+  &::after
+    content: url(../img/black.svg)
+    display: block
+    position: absolute
+    left: -10vw
+    top: 57vh
+    width: 750px
+    transform: rotate(-90deg)
+    pointer-events: none
+
+  .heading-title-wrap
+    &::after
+      border-width: 75px
+      margin-top: -78px
+
+  &__desc
+    margin-bottom: 230px
+
+  &__btn
+    margin: 18px 0
+
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  &__left
+    position: relative
+
+
+    &::before
+      content: ''
+      background-color: #f7f7f7
+      position: absolute
+      width: 1000%
+      height: 530px
+      z-index: -2
+      right: -45px
+      top: 47px
+      pointer-events: none
+
+  &__right
+    position: relative
+    padding-left: 45px
+
+    &::before
+      content: ''
+      position: absolute
+      top: -55px
+      bottom: -55px
+      z-index: -1
+      left: 45px
+      width: 300%
+      background-color: $dark_bg
+      pointer-events: none
+
+    &::after
+      content: ''
+      position: absolute
+      height: 140px
+      width: 22px
+      left: calc( 45px - 11px )
+      top: 50%
+      background-color: $red
+      transform: translateY(-50%)
+      z-index: 0
+      border-radius: 11px
+
+  &__desc
+    font-size: 23px
+    color: $dark
+    text-transform: uppercase
+    line-height: 1.921
+
+  &__heading
+    margin-bottom: 80px
+
+  &__items
+    padding-left: 85px
+    list-style: none
+
+  &__item
+    padding-left: 100px
+    color: $white
+    font-size: 23px
+    line-height: 1.304
+    position: relative
+
+    span
+      font-family: "GothamProBold"
+
+    &:not(:last-of-type)
+      margin-bottom: 65px
+
+    &::before
+      content: ""
+      position: absolute
+      background-image: url("../img/check.png")
+      width: 44px
+      height: 42px
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+
+@media all and (max-width: 1199px)
+  .facts
+    &__right
+      padding-left: 0
+
+      &::before
+        left: 0
+
+      &::after
+        left: -11px
+
+    &__desc
+      font-size: 18px
+
+    &__items
+      padding-left: 55px
+
+    &__item
+      padding-left: 70px
+
+      &:not(:last-of-type)
+        margin-bottom: 45px
+
+    &::after
+      left: -30vw
+      top: 60vh
+
+@media all and (max-width: 991px)
+  .facts
+    .heading-title-wrap
+      &::after
+        left: 100%
+        border-width: 60px
+        margin-top: -62px
+
+    &__item
+      font-size: 20px
+
+@media all and (max-width: 767px)
+  .facts
+    padding-top: 220px
+
+    &__wrap
+      grid-template-columns: 1fr
+
+    &__desc
+      margin-bottom: 45px
+
+    &__left
+      &::before
+        height: 300px
+        top: 33px
+
+    &__right
+      margin-top: 140px
+      z-index: 1
+
+@media all and (max-width: 375px)
+  .facts
+    &__heading
+      margin-bottom: 45px
+
+    &__items
+      padding-left: 35px
+
+    &__item
+      font-size: 16px
+      padding-left: 60px
