@@ -161,6 +161,16 @@ a:hover
   @media all and (max-width: 550px)
     &::after
       left: 0
+
+    span
+      font-size: 28px
+
+    &-title-wrap
+      &::after
+        border-width: 17px
+        margin-top: -18px
+        left: calc(100% + 15px)
+
 /*********************/
 /****** HEADER *******/
 /*********************/
@@ -804,6 +814,14 @@ a:hover
       margin-top: 140px
       z-index: 1
 
+@media all and (max-width: 550px)
+  .facts
+    .heading-title-wrap
+      &::after
+        left: 97%
+        border-width: 45px
+        margin-top: -47px
+
 @media all and (max-width: 375px)
   .facts
     &__heading
@@ -870,7 +888,6 @@ a:hover
 
 
 .info
-  margin-bottom: 300px
   padding-top: 460px
 
   .heading-title-wrap
@@ -952,17 +969,18 @@ a:hover
         content: '\f0da'
 
   &__slider-right
-    position: relative
+    .slick-slider
+      position: relative
 
-    &::before
-      content: ''
-      position: absolute
-      top: 20%
-      left: -25%
-      width: 100%
-      height: 100%
-      background-color: $gray
-      z-index: -1
+      &::before
+        content: ''
+        position: absolute
+        top: 20%
+        left: -25%
+        width: 100%
+        height: 100%
+        background-color: $gray
+        z-index: -1
 
     .slick-next,
     .slick-prev
@@ -1011,3 +1029,55 @@ a:hover
     line-height: 1.571
     max-width: 472px
     margin-bottom: 65px
+
+@media all and (max-width: 1199px)
+  .info
+    &__title
+      margin-bottom: 20px
+
+    &__desc
+      margin-bottom: 30px
+      padding-right: 15px
+
+    &__btn
+      margin-top: 60px
+
+@media all and (max-width: 991px)
+  .info
+    padding-top: 360px
+
+    .heading-title-wrap
+      &::after
+        left: 100%
+        border-width: 60px
+        margin-top: -62px
+
+    &__wrap
+      display: block
+
+    &__slider-left
+      width: 100%
+
+    &__desc
+      min-width: 100%
+
+    &__slider-right
+      margin-top: 50px
+
+      .slick-slider
+        &::before
+          top: 12%
+          left: -7%
+
+@media all and (max-width: 991px)
+  .info
+    padding-top: 230px
+
+@media all and (max-width: 550px)
+  .info
+    .heading-title-wrap
+      &::after
+        left: 97%
+        border-width: 45px
+        margin-top: -47px
+

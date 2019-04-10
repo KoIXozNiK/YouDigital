@@ -66,50 +66,53 @@
   /***************/
   /* INIT SLICK */
   /***************/
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      arrows: true,
+      centerMode: true,
 
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    arrows: true,
-    centerMode: true,
+      focusOnSelect: true
+    });
 
-    focusOnSelect: true
-  });
+    if($(window).width() > 991) {
+      $(".info__slider-right").css('width', $(window).width() / 2)
+    }
 
-  $(".info__slider-right").css('width', $(window).width()/2)
 
   /***************************/
   /* PAGINATION NUMBER SLICK */
   /***************************/
 
-  let $slickElement = $('.slider-for'),
-      $current = $('.pagingInfo__current'),
-      $count = $('.pagingInfo__count');
+  function paginationNumber() {
+    let $slickElement = $('.slider-for'),
+        $current = $('.pagingInfo__current'),
+        $count = $('.pagingInfo__count');
 
-  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-    let i = (currentSlide ? currentSlide : 0) + 1;
-    $current.text(i);
-    $count.text(' /' + slick.slideCount)
-  });
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+      let i = (currentSlide ? currentSlide : 0) + 1;
+      $current.text(i);
+      $count.text(' /' + slick.slideCount)
+    });
 
-
-
+  }
   /**********************************/
   /* FUNCTION INITIALIZATION */
   /**********************************/
   $(window).on('load', function () {
     fullHeightSection(),
-    mobileMenu()
-    changeLanguage()
-    goBot()
+    mobileMenu(),
+    changeLanguage(),
+    goBot(),
+        paginationNumber()
   });
 
   $(window).on('load resize', function () {
@@ -117,7 +120,8 @@
   });
 
   $(window).on('resize', function () {
-    mobileMenu()
+    mobileMenu(),
+    paginationNumber(),
     goBot()
   });
 

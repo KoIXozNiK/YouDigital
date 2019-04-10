@@ -133,7 +133,13 @@ a:hover {
         border-radius: 3px; } }
   @media all and (max-width: 550px) {
     .heading::after {
-      left: 0; } }
+      left: 0; }
+    .heading span {
+      font-size: 28px; }
+    .heading-title-wrap::after {
+      border-width: 17px;
+      margin-top: -18px;
+      left: calc(100% + 15px); } }
 
 /*********************/
 /****** HEADER *******/
@@ -653,6 +659,12 @@ a:hover {
       margin-top: 140px;
       z-index: 1; } }
 
+@media all and (max-width: 550px) {
+  .facts .heading-title-wrap::after {
+    left: 97%;
+    border-width: 45px;
+    margin-top: -47px; } }
+
 @media all and (max-width: 375px) {
   .facts__heading {
     margin-bottom: 45px; }
@@ -703,7 +715,6 @@ a:hover {
     grid-template-columns: repeat(2, 1fr); } }
 
 .info {
-  margin-bottom: 300px;
   padding-top: 460px; }
   .info .heading-title-wrap::after {
     border-width: 75px;
@@ -767,9 +778,9 @@ a:hover {
       left: 75px; }
       .info__slider-left .slick-next::before {
         content: '\f0da'; }
-  .info__slider-right {
+  .info__slider-right .slick-slider {
     position: relative; }
-    .info__slider-right::before {
+    .info__slider-right .slick-slider::before {
       content: '';
       position: absolute;
       top: 20%;
@@ -778,32 +789,32 @@ a:hover {
       height: 100%;
       background-color: #f7f7f7;
       z-index: -1; }
-    .info__slider-right .slick-next,
-    .info__slider-right .slick-prev {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 20;
-      transition: all 0.35s ease; }
-      .info__slider-right .slick-next::before,
-      .info__slider-right .slick-prev::before {
-        color: #000;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 600;
-        opacity: 1;
-        transition: all 0.35s ease;
-        font-size: 40px; }
-      .info__slider-right .slick-next:hover::before,
-      .info__slider-right .slick-prev:hover::before {
-        opacity: .7; }
-    .info__slider-right .slick-prev {
-      left: 15px; }
-      .info__slider-right .slick-prev::before {
-        content: '\f053'; }
-    .info__slider-right .slick-next {
-      right: 15px; }
-      .info__slider-right .slick-next::before {
-        content: '\f054'; }
+  .info__slider-right .slick-next,
+  .info__slider-right .slick-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: all 0.35s ease; }
+    .info__slider-right .slick-next::before,
+    .info__slider-right .slick-prev::before {
+      color: #000;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      opacity: 1;
+      transition: all 0.35s ease;
+      font-size: 40px; }
+    .info__slider-right .slick-next:hover::before,
+    .info__slider-right .slick-prev:hover::before {
+      opacity: .7; }
+  .info__slider-right .slick-prev {
+    left: 15px; }
+    .info__slider-right .slick-prev::before {
+      content: '\f053'; }
+  .info__slider-right .slick-next {
+    right: 15px; }
+    .info__slider-right .slick-next::before {
+      content: '\f054'; }
   .info__title {
     font-size: 22px;
     color: #000;
@@ -817,3 +828,41 @@ a:hover {
     line-height: 1.571;
     max-width: 472px;
     margin-bottom: 65px; }
+
+@media all and (max-width: 1199px) {
+  .info__title {
+    margin-bottom: 20px; }
+  .info__desc {
+    margin-bottom: 30px;
+    padding-right: 15px; }
+  .info__btn {
+    margin-top: 60px; } }
+
+@media all and (max-width: 991px) {
+  .info {
+    padding-top: 360px; }
+    .info .heading-title-wrap::after {
+      left: 100%;
+      border-width: 60px;
+      margin-top: -62px; }
+    .info__wrap {
+      display: block; }
+    .info__slider-left {
+      width: 100%; }
+    .info__desc {
+      min-width: 100%; }
+    .info__slider-right {
+      margin-top: 50px; }
+      .info__slider-right .slick-slider::before {
+        top: 12%;
+        left: -7%; } }
+
+@media all and (max-width: 991px) {
+  .info {
+    padding-top: 230px; } }
+
+@media all and (max-width: 550px) {
+  .info .heading-title-wrap::after {
+    left: 97%;
+    border-width: 45px;
+    margin-top: -47px; } }
