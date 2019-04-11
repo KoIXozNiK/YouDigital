@@ -28,7 +28,7 @@ a:hover
   background-color: $red
   background-image: linear-gradient(to right, transparent 50%, $red 50%)
   border-color: $red
-  border-width: 1px
+  border-width: 2px
   border-style: solid
   background-size: 200% 100%
   background-position: right bottom
@@ -46,7 +46,7 @@ a:hover
   color: $dark
   background-color: transparent
   border-color: $red
-  border-width: 1px
+  border-width: 2px
   border-style: solid
   background-size: 200% 100%
   background-position: right bottom
@@ -886,9 +886,23 @@ a:hover
       grid-template-columns: repeat(2, 1fr)
 
 
-
+/********************/
+/******* INFO *******/
+/********************/
 .info
+  position: relative
   padding-top: 460px
+
+  &::after
+    content: url(../img/black.svg)
+    display: block
+    position: absolute
+    left: -14vw
+    top: 54vh
+    width: 750px
+    transform: rotate(-90deg)
+    z-index: -5
+    pointer-events: none
 
   .heading-title-wrap
     &::after
@@ -1015,7 +1029,7 @@ a:hover
       &::before
         content: '\f054'
 
-  &__title
+  __title
     font-size: 22px
     color: $dark
     font-weight: bold
@@ -1073,6 +1087,12 @@ a:hover
   .info
     padding-top: 230px
 
+@media all and (max-width: 767px)
+  .info
+    &::after
+      left: -49vw
+      top: 35vh
+
 @media all and (max-width: 550px)
   .info
     .heading-title-wrap
@@ -1081,3 +1101,172 @@ a:hover
         border-width: 45px
         margin-top: -47px
 
+    &__btn
+      .a-btn-2
+        padding: 18px 48px
+
+/************************/
+/******* PARTNERS *******/
+/************************/
+
+.partners
+  margin-bottom: 300px
+  padding-top: 380px
+  $p: &
+
+  #{$p}__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  #{$p}__right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  #{$p}__left
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      height: 120%
+      width: 500%
+      top: 25px
+      right: 0
+      background-color: $gray
+      z-index: -1
+
+
+  #{$p}__title
+    font-size: 53px
+    color: $dark
+    text-transform: uppercase
+    margin-bottom: 75px
+    line-height: 1
+
+    span
+      color: #fc0d1b
+      font-family: "GothamProBlackItalic"
+
+  #{$p}__subtitle
+    font-size: 28px
+    font-family: "GothamProBold"
+    color: $dark
+    text-transform: uppercase
+    margin-bottom: 30px
+    line-height: 1
+
+  #{$p}__desc
+    font-size: 28px
+    color: $dark
+    text-transform: uppercase
+
+    a
+      transition: $transition
+      color: #00cfff
+
+      &:hover
+        color: #fc0d1b
+
+  #{$p}__pay
+    font-family: "GothamProBoldItalic"
+    font-size: 65px
+    margin-bottom: 75px
+    line-height: 1
+
+@media all and (max-width: 1440px)
+  .partners
+    $p: &
+
+    #{$p}__title
+      font-size: 45px
+
+    #{$p}__pay
+      font-size: 55px
+
+@media all and (max-width: 1199px)
+  .partners
+    $p: &
+
+    #{$p}__title
+      font-size: 40px
+      margin-bottom: 55px
+
+    #{$p}__pay
+      font-size: 50px
+      margin-bottom: 55px
+
+    #{$p}__desc
+      font-size: 22px
+
+    #{$p}__subtitle
+      font-size: 25px
+      margin-bottom: 25px
+
+@media all and (max-width: 991px)
+  .partners
+    $p: &
+
+    #{$p}__left
+      &::before
+        top: 17px
+
+    #{$p}__title
+      font-size: 32px
+      margin-bottom: 35px
+
+    #{$p}__pay
+      font-size: 42px
+      margin-bottom: 26px
+
+    #{$p}__desc
+      font-size: 17px
+
+    #{$p}__subtitle
+      font-size: 20px
+      margin-bottom: 20px
+
+@media all and (max-width: 767px)
+  .partners
+    padding-top: 250px
+    $p: &
+
+    #{$p}__wrap
+      grid-template-columns: 1fr
+
+    #{$p}__right
+      align-items: flex-start
+
+    #{$p}__title
+      font-size: 40px
+      margin-bottom: 35px
+
+    #{$p}__pay
+      font-size: 50px
+      margin-top: 26px
+
+    #{$p}__desc
+      font-size: 24px
+
+    #{$p}__subtitle
+      font-size: 24px
+      margin-bottom: 15px
+
+@media all and (max-width: 550px)
+  .partners
+    $p: &
+
+    #{$p}__title
+      font-size: 28px
+      margin-bottom: 24px
+
+    #{$p}__pay
+      font-size: 45px
+      margin-bottom: 20px
+
+    #{$p}__desc
+      font-size: 14px
+
+    #{$p}__subtitle
+      font-size: 20px
+      margin-bottom: 20px
