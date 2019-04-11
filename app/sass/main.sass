@@ -51,6 +51,9 @@ a:hover
   background-size: 200% 100%
   background-position: right bottom
 
+  &:focus
+    outline: 0
+
   &:hover
     background-color: $red
     background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, $red), color-stop(50%, transparent))
@@ -1598,6 +1601,9 @@ a:hover
     margin-bottom: 80px
     $p: &
 
+    &::after
+      top: 104vh
+
     #{$p}__wrap
       display: flex
       flex-direction: column-reverse
@@ -1640,3 +1646,141 @@ a:hover
 
     #{$p}__btn
       margin-top: 25px
+
+
+
+/**********************/
+/******* FOOTER *******/
+/**********************/
+.footer
+  background-color: $dark_bg
+
+  .menu
+    padding: 32px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__item
+      list-style: none
+      position: relative
+      padding: 0
+      line-height: inherit
+      font-size: 16px
+
+      &::before
+        content: ''
+        width: 0
+        height: 3px
+        background-color: #a8161a
+        position: absolute
+        bottom: 0
+        right: 0
+        transition: all 0.35s ease
+        border-radius: 1.5px
+
+      &:not(:last-of-type)
+        margin-right: 40px
+
+      a
+        color: #fff
+
+      &.active
+        &::before
+          width: 37px
+
+        a
+          font-family: "GothamProBold"
+          font-weight: 600
+
+    &__items-wrap
+      margin-right: 0
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      height: 100%
+      margin-bottom: 0
+      padding-left: 0
+      flex-wrap: wrap
+
+  &__form
+    display: flex
+    flex-direction: column
+
+    label
+      font-size: 16px
+      color: $white
+
+  &__subscribe-wrap
+    border: 2px solid $white
+    padding: 14px 27px
+    border-radius: 27.5px
+    transition: $transition
+    background-color: transparent
+    margin-right: auto
+    color: rgba($white, 0.302)
+    position: relative
+    max-width: 100%
+
+    input
+      font-size: 14px
+      background-color: transparent
+      border: none
+      color: $white
+      width: 310px
+      padding-right: 35px
+      max-width: 100%
+
+      &:focus
+        outline: 0
+
+      &::placeholder
+        color: rgba($white, 0.302)
+        line-height: 1.857
+
+    i
+      position: absolute
+      right: 27px
+      top: 50%
+      transform: translateY(-50%)
+      font-size: 24px
+
+  &__copy
+    padding: 40px 0
+    border-top: 2px solid $white
+    color: $white
+    text-align: center
+    font-size: 16px
+    margin-top: 32px
+
+@media all and (max-width: 991px)
+  .footer
+    background-color: $dark_bg
+
+    .menu
+      &__item
+        &:not(:last-of-type)
+         margin-right: 15px
+
+@media all and (max-width: 767px)
+  .footer
+    background-color: $dark_bg
+
+    .menu
+      flex-direction: column
+      align-items: flex-start
+
+      &__logo
+        img
+          width: 100%
+
+      &__item
+        margin-top: 15px
+
+      &__items-wrap
+        justify-content: flex-start
+
+    &__copy
+      padding: 25px 0
+
+
