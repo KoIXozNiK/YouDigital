@@ -36,9 +36,9 @@
   }
 
 
-  /***************/
+  /************/
   /* LANGUAGE */
-  /***************/
+  /************/
 
   function changeLanguage(){
     if($('.menu__language-wrap').length){
@@ -49,9 +49,9 @@
     }
   }
 
-  /************/
-  /* LANGUAGE */
-  /************/
+  /**********/
+  /* GO BOT */
+  /**********/
   function goBot() {
     if($('.go_to').length) {
       $('.go_to').on("click", function () {
@@ -60,6 +60,18 @@
           'scrollTop': bannerHeight.top - 30
         }, 1100);
       });
+    }
+  }
+
+
+  /**********************/
+  /* HEIGHT AVA CONTACT */
+  /**********************/
+
+  function heightAva() {
+    if($('.contacts__ava').length && $(window).width() < 992 && $(window).width() > 550) {
+      let heightBox = $('.contacts__right').outerHeight();
+      $('.contacts__ava').css('height', heightBox - 103)
     }
   }
 
@@ -112,7 +124,8 @@
     mobileMenu(),
     changeLanguage(),
     goBot(),
-        paginationNumber()
+    paginationNumber(),
+    heightAva()
   });
 
   $(window).on('load resize', function () {
@@ -122,15 +135,8 @@
   $(window).on('resize', function () {
     mobileMenu(),
     paginationNumber(),
-    goBot()
-  });
-
-  $(window).on('scroll', function () {
-
-  });
-
-  window.addEventListener("orientationchange", function () {
-
+    goBot(),
+    heightAva()
   });
 
 })(jQuery, window, document);

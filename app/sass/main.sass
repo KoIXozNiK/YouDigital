@@ -1110,7 +1110,6 @@ a:hover
 /************************/
 
 .partners
-  margin-bottom: 300px
   padding-top: 380px
   $p: &
 
@@ -1270,3 +1269,211 @@ a:hover
     #{$p}__subtitle
       font-size: 20px
       margin-bottom: 20px
+
+/************************/
+/******* CONTACTS *******/
+/************************/
+.contacts
+  margin-top: 420px
+  position: relative
+  margin-bottom: 210px
+  $p: &
+
+  &::after
+    content: url(../img/black.svg)
+    display: block
+    position: absolute
+    left: 68vw
+    top: 37vh
+    width: 750px
+    transform: rotate(-90deg)
+    z-index: -5
+
+  #{$p}__wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  #{$p}__wrap
+    position: relative
+
+  #{$p}__ava
+    position: absolute
+    top: 0
+    left: 0
+
+  #{$p}__people
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 35px
+    margin-top: 140px
+
+  #{$p}__right
+    padding-left: 50px
+    position: relative
+
+    &::before
+      position: absolute
+      content: ''
+      width: 500%
+      height: 110%
+      right: 90px
+      z-index: -1
+      top: 140px
+      background-color: $dark_bg
+
+    &::after
+      content: ''
+      position: absolute
+      height: 140px
+      width: 22px
+      right: 79px
+      top: 193px
+      background-color: $red
+      z-index: 0
+      border-radius: 11px
+
+  #{$p}__name
+    font-size: 45px
+    font-family: "GothamProBold"
+    color: $red
+    line-height: 1
+
+  #{$p}__position
+    font-size: 45px
+    color: $dark
+    line-height: 1
+    text-transform: uppercase
+
+  #{$p}__desc
+    font-size: 22px
+    color: $white
+    line-height: 1.345
+    padding-right: 22%
+
+    &:not(:first-of-type)
+      margin-top: 65px
+
+  #{$p}__content
+    margin-bottom: 85px
+    margin-top: 15px
+
+  #{$p}__person-name
+    font-size: 18px
+    color: $red
+    font-family: "GothamProBold"
+    line-height: 1.444
+    margin-top: 30px
+
+  #{$p}__person-position
+    font-size: 18px
+    color: $dark
+    line-height: 1.444
+
+  #{$p}__person-ava
+    width: 100%
+
+@media all and (max-width: 1680px)
+  .contacts
+    $p: &
+
+    #{$p}__ava
+      top: 140px
+      opacity: .5
+
+@media all and (max-width: 1199px)
+  .contacts
+    margin-bottom: 140px
+    $p: &
+
+    #{$p}__right
+      &::before
+        height: 100%
+
+@media all and (max-width: 991px)
+  .contacts
+    margin-bottom: 0
+    $p: &
+
+    #{$p}__wrapper
+      grid-template-columns: 1fr
+
+    #{$p}__right
+      padding-left: 0
+      padding-left: 0
+
+      &::before
+        top: 37px
+
+    #{$p}__position
+      color: $white
+
+    #{$p}__content
+      margin-bottom: 75px
+
+    #{$p}__ava
+      height: 500px
+
+    #{$p}__people
+      margin-top: 80px
+
+    #{$p}__desc
+      &:not(:first-of-type)
+        margin-top: 25px
+
+@media all and (max-width: 767px)
+  .contacts
+    margin-top: 220px
+    $p: &
+
+    #{$p}__desc
+      padding-right: 15px
+
+    #{$p}__right
+      padding-left: 0
+      padding-left: 0
+
+      &::before
+        right: 0
+
+      &::after
+        right: -11px
+
+@media all and (max-width: 550px)
+  .contacts
+    $p: &
+
+    #{$p}__desc
+      padding-right: 15px
+
+    #{$p}__people
+      grid-gap: 15px
+      grid-template-columns: 1fr
+
+    #{$p}__content
+      margin-bottom: 535px
+
+    #{$p}__ava
+      opacity: 1
+      left: 15px
+      max-width: calc(100% - 45px)
+      top: 100px
+
+    #{$p}__name
+      font-size: 34px
+
+    #{$p}__position
+      font-size: 34px
+
+    #{$p}__person-name
+      margin-top: 10px
+
+    #{$p}__desc
+      font-size: 19px
+      padding-right: 15px
+
+    #{$p}__right
+      &::before
+        top: 48px
+
+      &::after
+        top: 620px
