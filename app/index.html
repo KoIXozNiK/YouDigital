@@ -26,21 +26,22 @@
 <body>
 
 	<div class="body">
+		<div class="overlay"></div>
 		<!--HEADER-->
-		<header class="header">
+		<header class="header" id="home">
 			<div class="header__wrap">
 				<nav class="menu">
-					<div class="menu__desktop">
+					<div class="menu__desktop" >
 						<div class="menu__logo">
 							<a href="#"><img src="img/logo.png" alt="logo"></a>
 						</div>
 
 						<div>
 							<ul class="menu__items-wrap">
-								<li class="menu__item active"><a href="#">Главная</a></li>
-								<li class="menu__item"><a href="#">Услуги</a></li>
-								<li class="menu__item"><a href="#">Портфолио</a></li>
-								<li class="menu__item"><a href="#">Контакты</a></li>
+								<li class="menu__item active"><a href="#home">Главная</a></li>
+								<li class="menu__item"><a href="#services">Услуги</a></li>
+								<li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+								<li class="menu__item"><a href="#contants">Контакты</a></li>
 							</ul>
 						</div>
 
@@ -78,7 +79,7 @@
 				</nav>
 				<div class="container">
 					<div class="banner full-height-window">
-						<div class="banner__content">
+						<div class="banner__content bounceInLeft animated">
 							<div class="banner__title">Предоставляем комплексные IT решения <span class="banner__title-bold">для вашего бизнеса.</span>
 							</div>
 							<div class="banner__desc">Международная компания с фокусом на разработку, проектирование, дизайн и
@@ -100,10 +101,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="services__heading heading">
+							<div class="services__heading heading animated slideInDown wow " id="services">
 								<div class="heading-title-wrap"><span class="heading-title to">наши услиги</span></div>
 							</div>
-							<div class="services__items">
+							<div class="services__items animated wow bounceIn">
 								<div class="services__item">
 									<img src="img/icon-1.png" alt="icon">
 									<div class="services__desc">ВЕБ-САЙТЫ И ЛЕНДИНГИ </div>
@@ -148,7 +149,7 @@
 				<div class="container">
 					<div class="facts__wrap">
 						<div class="facts__left">
-							<div class="facts__heading heading">
+							<div class="facts__heading heading animated slideInDown wow">
 								<div class="heading-title-wrap">
 									<span class="heading-title-light">факты о</span><br>
 									<span class="heading-title">youdigital</span>
@@ -158,10 +159,10 @@
 								ПОЧЕМУ ВАМ СТОИТ РАБОТАТЬ С НАМИ?
 							</div>
 							<div class="facts_btn">
-								<a href="#" class="a-btn-2">Оставить заявку</a>
+								<a href="#" class="a-btn-2 animated wow bounceIn open-popup" onclick="openPopUp()">Оставить заявку</a>
 							</div>
 						</div>
-						<div class="facts__right">
+						<div class="facts__right animated wow bounceInRight">
 							<ul class="facts__items">
 								<li class="facts__item">
 									Реализовали <span>160</span> проектов в <span>17</span> странах мира.
@@ -191,10 +192,10 @@
 		<section class="clients">
 			<div class="container">
 				<div class="clients__wrap">
-					<div class="clients__heading heading">
+					<div class="clients__heading heading animated slideInDown wow">
 						<div class="heading-title-wrap"><span class="heading-title to">клиенты</span></div>
 					</div>
-					<div class="clients__items">
+					<div class="clients__items animated wow zoomInLeft">
 						<div class="clients__item">
 							<a href="#"><img src="img/client.png" alt="client"></a>
 						</div>
@@ -272,14 +273,14 @@
 		<!--INFO-->
 		<section class="info">
 			<div class="container">
-				<div class="info__heading heading">
-					<div class="heading-title-wrap">
+				<div class="info__heading heading animated slideInDown wow">
+					<div class="heading-title-wrap" id="portfolio">
 						<span class="heading-title-light">примеры</span><br>
 						<span class="heading-title">наших кейсов</span>
 					</div>
 				</div>
 				<div class="info__wrap">
-					<div class="info__slider-left">
+					<div class="info__slider-left animated slideInLeft wow">
 						<div class="slider-for">
 							<div class="info__slide">
 								<div class="info__title">Крупнейший<br>энергетический холдинг Украины</div>
@@ -295,10 +296,10 @@
 							<span class="pagingInfo__count">/2</span>
 						</span>
 						<div class="info__btn">
-							<a href="#" class="a-btn-2">Посетить сайт проекта</a>
+							<a href="#" class="a-btn-2 animated wow bounceIn">Посетить сайт проекта</a>
 						</div>
 					</div>
-					<div class="info__slider-right full_width">
+					<div class="info__slider-right full_width animated slideInRight wow">
 						<div class="slider-nav">
 							<div class="item">
 								<img src="img/ozp.dtek.com_.gif" alt="" class="info__img">
@@ -315,16 +316,16 @@
 		<!--PARTNERS-->
 		<section class="partners">
 			<div class="container">
-				<div class="clients__heading heading">
+				<div class="clients__heading heading animated slideInDown wow">
 					<div class="heading-title-wrap"><span class="heading-title to">наши партнеры</span></div>
 				</div>
-				<div class="partners__wrap">
+				<div class="partners__wrap animated wow flipInX">
 					<div class="partners__left">
 						<div class="partners__title">interactive <span>mind</span></div>
 						<div class="partners__subtitle">interactive mind</div>
 						<div class="partners__desc">агенстро интернет-маркетинга<br><a href="https://interactive-mind.com">https://interactive-mind.com</a></div>
 					</div>
-					<div class="partners__right">
+					<div class="partners__right animated wow flipInY">
 						<div class="partners__right--wrap">
 							<div class="partners__pay">Paytion</div>
 							<div class="partners__subtitle">paytion</div>
@@ -338,16 +339,16 @@
 		<!--CONTACTS-->
 		<section class="contacts">
 			<div class="container">
-				<div class="contacts__heading heading">
+				<div class="contacts__heading heading animated slideInDown wow" id="contants">
 					<div class="heading-title-wrap"><span class="heading-title to">контакти</span></div>
 				</div>
 			</div>
 
-			<div class="contacts__wrap">
-				<img src="img/foto.jpg" alt="ava" class="contacts__ava">
+			<div class="contacts__wrap animated wow fadeInDown">
+				<img src="img/foto.jpg" alt="ava" class="contacts__ava ">
 				<div class="container">
 					<div class="contacts__wrapper">
-						<div class="contacts__right">
+						<div class="contacts__right animated wow fadeInLeft">
 							<div class="contacts__content">
 								<div class="contacts__name">Yuliia Lyashchuk</div>
 								<div class="contacts__position">ceo</div>
@@ -360,15 +361,15 @@
 								<span class="contacts__quote">Юлия Лящук: “Всегда внимательно слушаю и слышу запрос каждого клиента, чтобы точно поставить задачу команде. Мы привыкли работать вдолгую, шаг за шагом развивая ваш бизнес. Это гораздо важнее краткосрочной выгоды”.</span>
 							</div>
 						</div>
-						<div class="contacts__left">
+						<div class="contacts__left ">
 							<div class="contacts__people">
-								<div class="contacts__person">
+								<div class="contacts__person animated wow fadeInDown">
 									<img src="img/artur.jpg" alt="ava" class="contacts__person-ava">
 									<div class="contacts__person-name">Artur Bershadskyi</div>
 									<div class="contacts__person-position">Co-founder</div>
 								</div>
 
-								<div class="contacts__person">
+								<div class="contacts__person animated wow fadeInDown">
 									<img src="img/oleg.jpg" alt="ava" class="contacts__person-ava">
 									<div class="contacts__person-name">Oleg Kurchenko</div>
 									<div class="contacts__person-position">Co-founder</div>
@@ -383,43 +384,41 @@
 		<!--LOCATION-->
 		<section class="location">
 			<div class="container">
-				<div class="location__heading heading">
+				<div class="location__heading heading animated slideInDown wow">
 					<div class="heading-title-wrap"><span class="heading-title to">Где нас найти?</span></div>
 				</div>
 				<div class="location__wrap">
-					<div class="location__left">
-
-
+					<div class="location__left animated wow pulse">
 						<div class="location__info">
 							Местоположение:<br>
 							<span class="location__info-bold">Verkhniy Val Street, 28<br>
 								Kyiv, 02000</span>
 						</div>
-						<div class="location__form-wrap">
-							<form action="" class="location__form">
-								<div class="location__box-input">
-									<input class="location__input" type="text" required>
-									<label class="location__label">Имя:</label>
+						<div class="location__form-wrap custom__form-wrap">
+							<form action="" class="location__form custom__form">
+								<div class="location__box-input custom__box-input">
+									<input class="location__input custom__input" type="text" required>
+									<label class="location__label custom__label">Имя:</label>
 								</div>
-								<div class="location__box-input">
-									<input class="location__input" type="text" required>
-									<label class="location__label">Почта:</label>
+								<div class="location__box-input custom__box-input">
+									<input class="location__input custom__input" type="text" required>
+									<label class="location__label custom__label">Почта:</label>
 								</div>
-								<div class="location__box-input">
-									<input class="location__input" type="text" required>
-									<label class="location__label">Телефон:</label>
+								<div class="location__box-input custom__box-input">
+									<input class="location__input custom__input" type="text" required>
+									<label class="location__label custom__label">Телефон:</label>
 								</div>
-								<div class="location__box-input">
-									<input class="location__input" type="text" required>
-									<label class="location__label">Компания:</label>
+								<div class="location__box-input custom__box-input">
+									<input class="location__input custom__input" type="text" required>
+									<label class="location__label custom__label">Компания:</label>
 								</div>
-								<button type="submit" class="location__btn a-btn-2">Свяжитесь с нами
+								<button type="submit" class="location__btn a-btn-2 animated wow bounceIn custom__btn">Свяжитесь с нами
 								</button>
 							</form>
 						</div>
 
 					</div>
-					<div class="location__map-wrap">
+					<div class="location__map-wrap animated wow slideInDown">
 						<div id="map" class="location__map full_width"></div>
 					</div>
 				</div>
@@ -436,10 +435,10 @@
 
 					<div>
 						<ul class="menu__items-wrap">
-							<li class="menu__item active"><a href="#">Главная</a></li>
-							<li class="menu__item"><a href="#">Услуги</a></li>
-							<li class="menu__item"><a href="#">Портфолио</a></li>
-							<li class="menu__item"><a href="#">Контакты</a></li>
+							<li class="menu__item active"><a href="#home">Главная</a></li>
+							<li class="menu__item"><a href="#services">Услуги</a></li>
+							<li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+							<li class="menu__item"><a href="#contants">Контакты</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -455,6 +454,48 @@
 			</div>
 			<div class="footer__copy">Copyright 2019</div>
 		</footer>
+
+		<div class="popup__form">
+			<div class="popup__form-content">
+				<div class="popup__form-title">ЗАПОЛНИТЕ ФОРМУ</div>
+				<div class="popup__form-desc">ЧТОБЫ МЫ НАЧАЛИ РАБОТУ С ВАМИ КАК МОЖНО БЫСТРЕЕ</div>
+			</div>
+			<div class="custom__form-wrap">
+				<form action="" class="custom__form">
+					<div class="custom__box-input">
+						<input class="custom__input" type="text" required>
+						<label class="custom__label">Имя:</label>
+					</div>
+					<div class="custom__box-input">
+						<input class="custom__input" type="text" required>
+						<label class="custom__label">Почта:</label>
+					</div>
+					<div class="custom__box-input">
+						<input class="custom__input" type="text" required>
+						<label class="custom__label">Телефон:</label>
+					</div>
+					<div class="custom__box-input">
+						<input class="custom__input" type="text" required>
+						<label class="custom__label">Компания:</label>
+					</div>
+					<button type="submit" class="custom__btn a-btn-2 animated wow bounceIn">Свяжитесь с нами
+					</button>
+				</form>
+			</div>
+			<div class="popup__form-close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+
+		<div class="popup__ok">
+			<div class="popup__ok-icon--ok">
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="popup__ok-title--ok">Заявка успешно отправлена</div>
+			<div class="popup__form-close popup__ok-close">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>

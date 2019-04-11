@@ -61,6 +61,60 @@ a:hover
     color: $white
     background-position: left bottom
 
+
+/*******************/
+/****** FORM *******/
+/*******************/
+
+.custom__form
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.custom__box-input
+  position: relative
+  width: 100%
+
+  &:not(:first-of-type)
+    margin-top: 30px
+
+.custom__input
+  border: none
+  width: 100%
+  border-bottom: 1px solid $dark
+  padding: 14px 0
+  transition: $transition
+  background-color: transparent
+
+  &:focus
+    border-bottom: 1px solid $red
+
+  &:focus,
+  &:valid
+    outline: 0
+    color: $dark
+
+    &~label
+      top: -5px
+      font-size: 14px
+
+.custom__label
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  transition: $transition
+  font-size: 18px
+  color: $dark
+  pointer-events: none
+
+.custom__btn
+  margin-top: 50px
+
+@media all and (max-width: 550px)
+  .custom__btn
+    padding: 18px 53px
+
 /*********************/
 /****** HEADINGS *******/
 /*********************/
@@ -929,6 +983,7 @@ a:hover
     display: flex
     justify-content: center
     flex-direction: column
+    z-index: 1
 
     .pagingInfo
       font-size: 18px
@@ -1303,6 +1358,7 @@ a:hover
     position: absolute
     top: 0
     left: 0
+    z-index: 1
 
   #{$p}__people
     display: grid
@@ -1352,6 +1408,7 @@ a:hover
     color: $white
     line-height: 1.345
     padding-right: 22%
+    z-index: 5
 
     &:not(:first-of-type)
       margin-top: 65px
@@ -1518,6 +1575,12 @@ a:hover
   #{$p}__heading
     margin-bottom: 70px
 
+  #{$p}__form
+    padding-right: 85px
+
+  #{$p}__btn
+    margin-top: 90px
+
   #{$p}__map-wrap
     position: relative
     width: 50%
@@ -1541,52 +1604,6 @@ a:hover
 
     &-bold
       font-family: "GothamProBold"
-
-  #{$p}__form
-    display: flex
-    flex-direction: column
-    align-items: flex-start
-    padding-right: 85px
-
-  #{$p}__box-input
-    position: relative
-    width: 100%
-
-    &:not(:first-of-type)
-      margin-top: 30px
-
-  #{$p}__input
-    border: none
-    width: 100%
-    border-bottom: 1px solid $dark
-    padding: 14px 0
-    transition: $transition
-    background-color: transparent
-
-    &:focus
-      border-bottom: 1px solid $red
-
-    &:focus,
-    &:valid
-      outline: 0
-      color: $dark
-
-      &~label
-        top: -5px
-        font-size: 14px
-
-  #{$p}__label
-    position: absolute
-    left: 0
-    top: 50%
-    transform: translateY(-50%)
-    transition: $transition
-    font-size: 18px
-    color: $dark
-    pointer-events: none
-
-  #{$p}__btn
-    margin-top: 90px
 
 @media all and (max-width: 1199px)
   .location
@@ -1783,4 +1800,134 @@ a:hover
     &__copy
       padding: 25px 0
 
+.overlay
+  opacity: 0
+  pointer-events: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 100
+  background-color: $dark_bg
 
+
+.popup__form
+  position: fixed
+  z-index: 9999
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  background-color: #fff
+  padding: 45px 70px
+  max-width: calc(100% - 30px)
+  width: 660px
+  border-radius: 10px
+  transition: $transition
+  opacity: 0
+  pointer-events: none
+
+  &-close
+    position: absolute
+    top: 20px
+    right: 20px
+    font-size: 20px
+
+
+  &-content
+    text-align: center
+    margin-bottom: 80px
+
+  &-title
+    font-size: 41px
+    color: $dark
+    line-height: 1
+    font-family: "GothamProBold"
+
+  &-desc
+    color: $dark
+    line-height: 1
+
+
+
+.custom__form
+    align-items: center
+
+.popup__ok
+  position: fixed
+  z-index: 9999
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  background-color: #fff
+  padding: 45px 70px
+  max-width: calc(100% - 30px)
+  width: 850px
+  border-radius: 10px
+  transition: $transition
+  opacity: 0
+  pointer-events: none
+
+  &-title--ok
+    font-size: 41px
+    color: $dark
+    text-align: center
+    font-family: "GothamProBold"
+    text-align: center
+
+  &-icon--ok
+    font-size: 120px
+    color: #2ecc71
+    text-align: center
+
+@media all and (max-width: 767px)
+  .popup__form
+    width: 550px
+
+    &-content
+      margin-bottom: 20px
+
+    &-title
+      font-size: 26px
+      margin-bottom: 10px
+
+    &-desc
+      font-size: 14px
+
+    .custom__form
+      align-items: center
+
+  .popup__ok
+    &-title--ok
+      font-size: 4vw
+
+    &-icon--ok
+      font-size: 13vw
+
+@media all and (max-width: 550px)
+  .popup__form
+    padding: 20px 15px
+
+    &-content
+      margin-bottom: 20px
+
+    &-title
+      font-size: 23px
+
+    .custom__form
+      align-items: center
+
+    &-close
+      display: none
+
+  .popup__ok
+    padding: 20px 15px
+
+    &-close
+      display: block
+
+    &-title--ok
+      font-size: 8vw
+
+    &-icon--ok
+      font-size: 23vw
