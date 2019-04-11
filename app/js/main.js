@@ -96,9 +96,27 @@
     });
 
     if($(window).width() > 991) {
-      $(".info__slider-right").css('width', $(window).width() / 2)
+      $(".full_width").css('width', $(window).width() / 2)
     }
 
+
+  /************/
+  /* INIT MAP */
+  /************/
+  function initMap() {
+    let pos = {lat: 50.466630, lng: 30.513338};
+    let set = {
+        center: pos,
+        zoom: 16,
+      disableDefaultUI: true
+      };
+
+    let map = new google.maps.Map(document.getElementById('map'), set);
+    let marker = new google.maps.Marker({
+      position: pos,
+      map: map
+    })
+  }
 
   /***************************/
   /* PAGINATION NUMBER SLICK */
@@ -125,7 +143,8 @@
     changeLanguage(),
     goBot(),
     paginationNumber(),
-    heightAva()
+    heightAva(),
+    initMap()
   });
 
   $(window).on('load resize', function () {
