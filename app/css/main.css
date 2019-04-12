@@ -741,7 +741,9 @@ a:hover {
   .clients__items {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px; }
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center; }
   .clients__item {
     filter: grayscale(1);
     transition: all 0.35s ease; }
