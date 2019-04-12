@@ -212,8 +212,7 @@ a:hover {
     width: 50vw;
     right: -12vw;
     bottom: -24vh;
-    z-index: -1;
-    animation: fragment_2 backwards 10s ease-in-out infinite; }
+    z-index: -1; }
   .header__arrow {
     position: absolute;
     left: 50%;
