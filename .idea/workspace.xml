@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="520f1d13-1a87-485b-a985-a4433ceab6ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
-    </list>
+    <list default="true" id="520f1d13-1a87-485b-a985-a4433ceab6ee" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2000,8 +1998,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="269">
+              <caret line="1360" lean-forward="true" selection-start-line="1360" selection-end-line="1360" />
             </state>
           </provider>
         </entry>
@@ -2195,12 +2193,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554802968090</updated>
       <workItem from="1554802970468" duration="109249000" />
-      <workItem from="1555084128670" duration="5444000" />
+      <workItem from="1555084128670" duration="5535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114693000" />
+    <option name="totallyTimeSpent" value="114784000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4303,8 +4301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        <state relative-caret-position="269">
+          <caret line="1360" lean-forward="true" selection-start-line="1360" selection-end-line="1360" />
         </state>
       </provider>
     </entry>

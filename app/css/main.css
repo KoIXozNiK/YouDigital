@@ -1083,8 +1083,7 @@ a:hover {
       top: 25px;
       right: 0;
       background-color: #f7f7f7;
-      z-index: -1;
-      animation: fragment_1 backwards 40s ease-in-out infinite; }
+      z-index: -1; }
   .partners .partners__title {
     font-size: 53px;
     text-transform: uppercase;
