@@ -496,9 +496,29 @@ a:hover
       padding: 15px 35px
       line-height: normal
       transition: $transition
+      position: relative
+
+      &::before
+        content: ''
+        width: 0
+        height: 3px
+        background-color: $red
+        position: absolute
+        bottom: 0
+        left: 35px
+        transition: $transition
+        border-radius: 1.5px
 
       a
         color: $dark
+
+      &.active
+        a
+          font-family: "GothamProBold"
+          font-weight: 600
+
+        &::before
+          width: 37px
 
     &__language-wrap
       display: flex
