@@ -4,6 +4,8 @@ $red: rgb(168, 22, 26)
 $dark: #000
 $gray: rgb(247, 247, 247)
 $transition: all .35s ease
+$animation: fragment_1 backwards 10s ease-in-out infinite
+$animation_2: fragment_2 backwards 10s ease-in-out infinite
 
 *
   font-family: "GothamProRegular"
@@ -235,10 +237,14 @@ a:hover
 /*********************/
 
 .header
-  background: url("../img/red.svg")
-  background-repeat: no-repeat
-  background-position: -17% 56vh
   margin-bottom: 85px
+
+  &__red-svg
+    position: absolute
+    left: -11vw
+    top: 56vh
+    width: 44%
+    animation: $animation
 
   &__wrap
     overflow: hidden
@@ -250,6 +256,7 @@ a:hover
     right: -12vw
     bottom: -24vh
     z-index: -1
+    animation: $animation_2
 
   &__arrow
     position: absolute
@@ -328,6 +335,36 @@ a:hover
     &__svg
       width: 95vw
       bottom: -10vh
+
+.st0
+  fill: #FFFFFF
+
+.st1
+  fill: #FF0000
+
+.st2
+  fill: none
+  stroke: $red
+  stroke-miterlimit: 100
+.st3
+  fill: none
+  stroke: $red
+  stroke-width: 1.5
+  stroke-miterlimit: 100
+
+.path
+  stroke-dasharray: 1000
+  stroke-dashoffset: 1000
+  animation: dash 5s linear alternate infinite
+
+
+@keyframes dash
+  from
+    stroke-dashoffset: 1000
+  to
+    stroke-dashoffset: 0
+
+
 
 
 /*******************/
@@ -670,6 +707,8 @@ a:hover
     width: 750px
     transform: rotate(-90deg)
     z-index: -5
+    animation: $animation
+
 
   &__items
     display: grid
@@ -685,6 +724,9 @@ a:hover
     margin-bottom: 70px
     z-index: 1
     position: relative
+
+    img
+      width: 70px
 
   &__desc
     font-size: 23px
@@ -772,6 +814,8 @@ a:hover
     width: 750px
     transform: rotate(-90deg)
     pointer-events: none
+    animation: $animation
+
 
   .heading-title-wrap
     &::after
@@ -960,6 +1004,8 @@ a:hover
     width: 750px
     transform: rotate(-90deg) rotateX(180deg)
     z-index: -5
+    animation: $animation
+
 
   &__items
     display: grid
@@ -973,7 +1019,7 @@ a:hover
     transition: $transition
 
     img
-      max-width: 100%
+      max-width: 80%
 
     &:hover
       filter: grayscale(0)
@@ -1024,6 +1070,8 @@ a:hover
     transform: rotate(-90deg)
     z-index: -5
     pointer-events: none
+    animation: $animation
+
 
   .heading-title-wrap
     &::after
@@ -1311,6 +1359,7 @@ a:hover
       right: 0
       background-color: $gray
       z-index: -1
+      animation: $animation
 
 
   #{$p}__title
@@ -1474,6 +1523,8 @@ a:hover
     width: 750px
     transform: rotate(-90deg)
     z-index: -5
+    animation: $animation
+
 
   #{$p}__wrapper
     display: grid
@@ -1687,6 +1738,7 @@ a:hover
     transform: rotate(-90deg)
     z-index: -5
     pointer-events: none
+    animation: $animation
 
   #{$p}__map
     width: 100%
@@ -2059,3 +2111,53 @@ a:hover
 
     &-icon--ok
       font-size: 23vw
+
+
+
+
+@-webkit-keyframes fragment_1
+  0%
+    transform: rotate(0deg)  scale(1) translate(0, 0)
+    -webkit-transform: rotate(0deg)  scale(1) translate(0, 0)
+  50%
+    transform: rotate(180deg) scale(1.1) translate(4%, 4%)
+    -webkit-transform: rotate(180deg) scale(1.1) translate(4%, 4%)
+  100%
+    transform: rotate(0deg) scale(1) translate(0, 0)
+    -webkit-transform: rotate(0deg) scale(1) translate(0, 0)
+
+@keyframes fragment_1
+  0%
+    transform: rotate(0deg)  scale(1) translate(0, 0)
+    -webkit-transform: rotate(0deg)  scale(1) translate(0, 0)
+  50%
+    transform: rotate(180deg) scale(1.1) translate(4%, 4%)
+    -webkit-transform: rotate(180deg) scale(1.1) translate(4%, 4%)
+  100%
+    transform: rotate(0deg) scale(1) translate(0, 0)
+    -webkit-transform: rotate(0deg) scale(1) translate(0, 0)
+
+
+@-webkit-keyframes fragment_2
+  0%
+    transform: scale(1) translate(0, 0)
+    -webkit-transform: scale(1) translate(0, 0)
+  50%
+    transform: scale(0.8) translate(7%, 7%)
+    -webkit-transform: scale(0.8) translate(7%, 7%)
+  100%
+    transform: scale(1) translate(0, 0)
+    -webkit-transform: scale(1) translate(0, 0)
+
+@keyframes fragment_2
+  0%
+    transform:  scale(1) translate(0, 0)
+    -webkit-transform: scale(1) translate(0, 0)
+  50%
+    transform:  scale(0.8) translate(7%, 7%)
+    -webkit-transform:  scale(0.8) translate(7%, 7%)
+  100%
+    transform:  scale(1) translate(0, 0)
+    -webkit-transform:  scale(1) translate(0, 0)
+
+
