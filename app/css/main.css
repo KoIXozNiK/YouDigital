@@ -7,6 +7,9 @@ a:hover {
 .body {
   overflow: hidden; }
 
+.slow {
+  animation-duration: 1.4s; }
+
 /*********************/
 /****** BUTTON *******/
 /*********************/
@@ -785,9 +788,19 @@ a:hover {
     border-width: 75px;
     margin-top: -78px; }
   .info .slick-list {
-    padding: 0 !important; }
+    padding: 0 !important;
+    height: 100%; }
+  .info .slick-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 425px; }
+  .info .slick-slider,
+  .info .slick-track {
+    height: 100%; }
   .info__btn {
-    margin-top: 116px; }
+    margin-top: 116px;
+    margin-bottom: 55px; }
   .info__img {
     width: 100%; }
   .info__wrap {
@@ -803,7 +816,9 @@ a:hover {
       color: #000;
       padding-left: 165px;
       display: flex;
-      line-height: 1; }
+      line-height: 1;
+      position: absolute;
+      top: 58%; }
       .info__slider-left .pagingInfo__current {
         font-size: 45px;
         font-family: "GothamProBold"; }
@@ -811,7 +826,7 @@ a:hover {
         margin-top: 3px; }
     .info__slider-left .slick-next,
     .info__slider-left .slick-prev {
-      top: calc(100% + 23px);
+      top: calc(58% + 17px);
       display: flex;
       height: 55px;
       width: 55px;
@@ -881,19 +896,19 @@ a:hover {
     right: 15px; }
     .info__slider-right .slick-next::before {
       content: '\f054'; }
-  .info __title {
+  .info__title {
     font-size: 22px;
     color: #000;
     font-weight: bold;
     line-height: 1.182;
     font-family: "GothamProBold";
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-top: 60px; }
   .info__desc {
     font-size: 14px;
     color: #000;
     line-height: 1.571;
-    max-width: 472px;
-    margin-bottom: 65px; }
+    max-width: 472px; }
 
 @media all and (max-width: 1199px) {
   .info__title {
@@ -913,6 +928,17 @@ a:hover {
       margin-top: -62px; }
     .info__wrap {
       display: block; }
+    .info__slider-left .slick-slide {
+      min-height: 330px; }
+    .info__slider-left .pagingInfo {
+      top: 62%; }
+    .info__slider-left .slick-next,
+    .info__slider-left .slick-prev {
+      top: calc(62% + 17px); }
+    .info__title {
+      margin-top: 0; }
+    .info__btn {
+      margin-bottom: 15px; }
     .info__slider-left {
       width: 100%; }
     .info__desc {
@@ -938,7 +964,17 @@ a:hover {
     border-width: 45px;
     margin-top: -47px; }
   .info__btn .a-btn-2 {
-    padding: 18px 48px; } }
+    padding: 18px 48px; }
+  .info__slider-left .slick-slide {
+    min-height: 380px; }
+  .info__slider-left .pagingInfo {
+    top: 64%; }
+  .info__slider-left .slick-next,
+  .info__slider-left .slick-prev {
+    top: calc(64% + 17px); }
+  .info__slider-left__desc {
+    max-height: 9.226em;
+    overflow: hidden; } }
 
 /************************/
 /******* PARTNERS *******/

@@ -134,7 +134,10 @@
     });
 
   }
-  
+
+  /**************/
+  /* OPEN POPUP */
+  /**************/
   function openPopUp() {
     $('.open-popup').on('click', function (e) {
       e.preventDefault()
@@ -155,19 +158,39 @@
     $('.overlay, .popup__form-close').on('click', function (e) {
       e.preventDefault()
 
-      $('.popup__form').css({
-        'opacity': 0,
-        'pointer-events': 'none'
-      })
-
-      $('.overlay').css({
+      $('.popup__form, .overlay, .popup__ok').css({
         'opacity': 0,
         'pointer-events': 'none'
       })
 
       $('html').css('overflow', 'visible')
     })
+
+    // clear form
+    $(".custom__form").on("submit", function(e){
+      e.preventDefault();
+
+      $('.popup__form').css({
+        'opacity': 0,
+        'pointer-events': 'none'
+      })
+
+      $('.overlay').css({
+        'opacity': 0.722,
+        'pointer-events': 'visible'
+      })
+
+      $(".custom__form").trigger("reset");
+
+      $('.popup__ok').css({
+        'opacity': 1,
+        'pointer-events': 'visible'
+      })
+
+    })
   }
+
+
 
   /***************/
   /* SCROLL MENU */

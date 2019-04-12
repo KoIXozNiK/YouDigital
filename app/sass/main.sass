@@ -14,6 +14,8 @@ a:hover
 .body
   overflow: hidden
 
+.slow
+  animation-duration: 1.4s
 
 /*********************/
 /****** BUTTON *******/
@@ -970,9 +972,21 @@ a:hover
 
   .slick-list
     padding: 0!important
+    height: 100%
+
+  .slick-slide
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 425px
+
+  .slick-slider,
+  .slick-track
+    height: 100%
 
   &__btn
     margin-top: 116px
+    margin-bottom: 55px
 
   &__img
     width: 100%
@@ -993,6 +1007,8 @@ a:hover
       padding-left: 165px
       display: flex
       line-height: 1
+      position: absolute
+      top: 58%
 
       &__current
         font-size: 45px
@@ -1003,7 +1019,7 @@ a:hover
 
     .slick-next,
     .slick-prev
-      top: calc(100% + 23px)
+      top: calc(58% + 17px)
       display: flex
       height: 55px
       width: 55px
@@ -1089,20 +1105,20 @@ a:hover
       &::before
         content: '\f054'
 
-  __title
+  &__title
     font-size: 22px
     color: $dark
     font-weight: bold
     line-height: 1.182
     font-family: "GothamProBold"
     margin-bottom: 40px
+    margin-top: 60px
 
   &__desc
     font-size: 14px
     color: $dark
     line-height: 1.571
     max-width: 472px
-    margin-bottom: 65px
 
 @media all and (max-width: 1199px)
   .info
@@ -1128,6 +1144,24 @@ a:hover
 
     &__wrap
       display: block
+
+
+    &__slider-left
+      .slick-slide
+        min-height: 330px
+
+      .pagingInfo
+        top: 62%
+
+      .slick-next,
+      .slick-prev
+        top: calc(62% + 17px)
+
+    &__title
+      margin-top: 0
+
+    &__btn
+      margin-bottom: 15px
 
     &__slider-left
       width: 100%
@@ -1165,6 +1199,20 @@ a:hover
       .a-btn-2
         padding: 18px 48px
 
+    &__slider-left
+      .slick-slide
+        min-height: 380px
+
+      .pagingInfo
+        top: 64%
+
+      .slick-next,
+      .slick-prev
+        top: calc(64% + 17px)
+
+      &__desc
+        max-height: 9.226em
+        overflow: hidden
 /************************/
 /******* PARTNERS *******/
 /************************/
