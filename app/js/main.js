@@ -202,6 +202,7 @@
 
       var index_el = $(this).closest('.menu__item').index();
       $(this).closest('.body').find(".header .menu__item").removeClass('active').eq(index_el).addClass('active');
+      $(this).closest('.body').find(".menu__mobile .menu__item").removeClass('active').eq(index_el).addClass('active');
       $(this).closest('.body').find(".footer .menu__item").removeClass('active').eq(index_el).addClass('active');
 
       var id = $(this).attr('href'),
