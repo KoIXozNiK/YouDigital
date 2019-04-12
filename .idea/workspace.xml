@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="520f1d13-1a87-485b-a985-a4433ceab6ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="368" column="68" selection-start-line="368" selection-start-column="68" selection-end-line="368" selection-end-column="68" />
+            <state relative-caret-position="176">
+              <caret line="372" column="60" selection-start-line="372" selection-start-column="60" selection-end-line="372" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="1303" column="29" selection-start-line="1303" selection-start-column="29" selection-end-line="1303" selection-end-column="29" />
+            <state relative-caret-position="198">
+              <caret line="1342" column="28" selection-start-line="1342" selection-start-column="28" selection-end-line="1342" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
+            <state relative-caret-position="188">
               <caret line="204" column="50" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
             </state>
           </provider>
@@ -217,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554802968090</updated>
       <workItem from="1554802970468" duration="109249000" />
-      <workItem from="1555084128670" duration="717000" />
+      <workItem from="1555084128670" duration="993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109966000" />
+    <option name="totallyTimeSpent" value="110242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -238,9 +237,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12974203" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12974203" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32767403" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32767403" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -330,24 +329,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4080">
-          <caret line="204" column="50" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
+        <state relative-caret-position="176">
+          <caret line="372" column="60" selection-start-line="372" selection-start-column="60" selection-end-line="372" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="368" column="68" selection-start-line="368" selection-start-column="68" selection-end-line="368" selection-end-column="68" />
+        <state relative-caret-position="188">
+          <caret line="204" column="50" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="1303" column="29" selection-start-line="1303" selection-start-column="29" selection-end-line="1303" selection-end-column="29" />
+        <state relative-caret-position="198">
+          <caret line="1342" column="28" selection-start-line="1342" selection-start-column="28" selection-end-line="1342" selection-end-column="28" />
         </state>
       </provider>
     </entry>

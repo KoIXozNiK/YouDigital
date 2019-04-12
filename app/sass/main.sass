@@ -1304,7 +1304,7 @@ a:hover
       transition: $transition
 
       &:hover
-        opacity: .7
+        filter: grayscale(1)
 
     span
       color: #fc0d1b
@@ -1331,10 +1331,13 @@ a:hover
         color: #fc0d1b
 
   #{$p}__pay
-    font-family: "GothamProBoldItalic"
     font-size: 65px
     margin-bottom: 75px
     line-height: 1
+
+    a
+      font-family: "GothamProBoldItalic"
+      color: $dark
 
 @media all and (max-width: 1440px)
   .partners

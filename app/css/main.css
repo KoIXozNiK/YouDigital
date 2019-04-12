@@ -1040,7 +1040,7 @@ a:hover {
       color: #000;
       transition: all 0.35s ease; }
       .partners .partners__title a:hover {
-        opacity: .7; }
+        filter: grayscale(1); }
     .partners .partners__title span {
       color: #fc0d1b;
       font-family: "GothamProBlackItalic"; }
@@ -1061,10 +1061,12 @@ a:hover {
       .partners .partners__desc a:hover {
         color: #fc0d1b; }
   .partners .partners__pay {
-    font-family: "GothamProBoldItalic";
     font-size: 65px;
     margin-bottom: 75px;
     line-height: 1; }
+    .partners .partners__pay a {
+      font-family: "GothamProBoldItalic";
+      color: #000; }
 
 @media all and (max-width: 1440px) {
   .partners .partners__title {
