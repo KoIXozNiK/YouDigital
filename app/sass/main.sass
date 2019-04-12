@@ -235,14 +235,21 @@ a:hover
 /*********************/
 
 .header
-  background: url("../img/red.svg"), url("../img/f64206cb33ecbf954d2b18f82e5dec02.png")
+  background: url("../img/red.svg")
   background-repeat: no-repeat
-  background-position: -17% 56vh, 100% 24vh
+  background-position: -17% 56vh
   margin-bottom: 85px
 
   &__wrap
     overflow: hidden
     position: relative
+
+  &__svg
+    position: absolute
+    width: 50vw
+    right: -12vw
+    bottom: -24vh
+    z-index: -1
 
   &__arrow
     position: absolute
@@ -289,12 +296,21 @@ a:hover
 
 @media all and (max-width: 991px)
   .header
-    background-position: -30% 140% ,100% 140%
+    background-position: -30% 140%
     background-size: 50%
+
+    &__svg
+      width: 63vw
+      right: -12vw
+      bottom: -16vh
 
 @media all and (max-width: 767px)
   .header
     margin-bottom: 45px
+
+    &__svg
+      width: 74vw
+      bottom: -13vh
 
     &::after
       border-width: 45px
@@ -308,6 +324,10 @@ a:hover
   .header
     background-position: -15% 110% ,100% 78vh
     background-size: 50%
+
+    &__svg
+      width: 95vw
+      bottom: -10vh
 
 
 /*******************/

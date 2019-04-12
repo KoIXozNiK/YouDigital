@@ -197,13 +197,19 @@ a:hover {
 /****** HEADER *******/
 /*********************/
 .header {
-  background: url("../img/red.svg"), url("../img/f64206cb33ecbf954d2b18f82e5dec02.png");
+  background: url("../img/red.svg");
   background-repeat: no-repeat;
-  background-position: -17% 56vh, 100% 24vh;
+  background-position: -17% 56vh;
   margin-bottom: 85px; }
   .header__wrap {
     overflow: hidden;
     position: relative; }
+  .header__svg {
+    position: absolute;
+    width: 50vw;
+    right: -12vw;
+    bottom: -24vh;
+    z-index: -1; }
   .header__arrow {
     position: absolute;
     left: 50%;
@@ -245,12 +251,19 @@ a:hover {
 
 @media all and (max-width: 991px) {
   .header {
-    background-position: -30% 140% ,100% 140%;
-    background-size: 50%; } }
+    background-position: -30% 140%;
+    background-size: 50%; }
+    .header__svg {
+      width: 63vw;
+      right: -12vw;
+      bottom: -16vh; } }
 
 @media all and (max-width: 767px) {
   .header {
     margin-bottom: 45px; }
+    .header__svg {
+      width: 74vw;
+      bottom: -13vh; }
     .header::after {
       border-width: 45px;
       margin-left: -45px; }
@@ -261,7 +274,10 @@ a:hover {
 @media all and (max-width: 500px) {
   .header {
     background-position: -15% 110% ,100% 78vh;
-    background-size: 50%; } }
+    background-size: 50%; }
+    .header__svg {
+      width: 95vw;
+      bottom: -10vh; } }
 
 /*******************/
 /****** MENU *******/
