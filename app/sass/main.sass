@@ -705,6 +705,12 @@ a:hover
     &__items
       grid-template-columns: repeat(3, 1fr)
 
+    &__item
+      img
+        width: 50%
+
+
+
 @media all and (max-width: 550px)
   .services
     &::after
@@ -713,6 +719,10 @@ a:hover
     &__items
       grid-template-columns: repeat(2, 1fr)
       grid-gap: 15px
+
+    &__item
+      img
+        width: 75px
 
 @media all and (max-width: 375px)
   .services
@@ -948,6 +958,12 @@ a:hover
     &:hover
       filter: grayscale(0)
 
+@media all and (max-width: 1199px)
+  .clients
+    &__item
+      img
+        max-width: 80%
+
 @media all and (max-width: 991px)
   .clients
     &__items
@@ -960,6 +976,10 @@ a:hover
   .clients
     &__items
       grid-template-columns: repeat(3, 1fr)
+
+    &__item
+      img
+        max-width: 70%
 
 @media all and (max-width: 550px)
   .clients
@@ -998,7 +1018,6 @@ a:hover
     display: flex
     flex-direction: column
     justify-content: space-between
-    min-height: 425px
 
   .slick-slider,
   .slick-track
@@ -1021,6 +1040,10 @@ a:hover
     flex-direction: column
     z-index: 1
 
+    .slick-slide
+      min-height: 475px
+
+
     .pagingInfo
       font-size: 18px
       color: $dark
@@ -1028,7 +1051,7 @@ a:hover
       display: flex
       line-height: 1
       position: absolute
-      top: 58%
+      bottom: 150px
 
       &__current
         font-size: 45px
@@ -1039,7 +1062,8 @@ a:hover
 
     .slick-next,
     .slick-prev
-      top: calc(58% + 17px)
+      top: auto
+      bottom: calc(150px - 32px)
       display: flex
       height: 55px
       width: 55px
@@ -1079,6 +1103,11 @@ a:hover
         content: '\f0da'
 
   &__slider-right
+    .slick-slide
+      display: flex
+      align-items: center
+      justify-content: center
+
     .slick-slider
       position: relative
 
@@ -1230,9 +1259,9 @@ a:hover
       .slick-prev
         top: calc(64% + 17px)
 
-      &__desc
-        max-height: 9.226em
-        overflow: hidden
+    &__desc
+      max-height: 9.226em
+      overflow: hidden
 /************************/
 /******* PARTNERS *******/
 /************************/
@@ -1266,10 +1295,16 @@ a:hover
 
   #{$p}__title
     font-size: 53px
-    color: $dark
     text-transform: uppercase
     margin-bottom: 75px
     line-height: 1
+
+    a
+      color: $dark
+      transition: $transition
+
+      &:hover
+        opacity: .7
 
     span
       color: #fc0d1b
