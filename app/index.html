@@ -24,6 +24,9 @@
 <body>
 
 	<div class="body">
+		<div class="preloader">
+			<img src="img/logo.png" alt="logo">
+		</div>
 		<div class="overlay"></div>
 		<!--HEADER-->
 		<header class="header" id="home">
@@ -4953,19 +4956,19 @@
 						<div class="location__form-wrap custom__form-wrap">
 							<form action="" class="location__form custom__form" method="POST">
 								<div class="location__box-input custom__box-input">
-									<input class="location__input custom__input" type="text" required>
+									<input class="location__input custom__input" name="name" type="text" required>
 									<label class="location__label custom__label">Имя:</label>
 								</div>
 								<div class="location__box-input custom__box-input">
-									<input class="location__input custom__input" type="text" required>
+									<input class="location__input custom__input" name="email" type="text" required>
 									<label class="location__label custom__label">Почта:</label>
 								</div>
 								<div class="location__box-input custom__box-input">
-									<input class="location__input custom__input" type="text" required>
+									<input class="location__input custom__input" name="tel" type="text" required>
 									<label class="location__label custom__label">Телефон:</label>
 								</div>
 								<div class="location__box-input custom__box-input">
-									<input class="location__input custom__input" type="text" required>
+									<input class="location__input custom__input" name="company" type="text" required>
 									<label class="location__label custom__label">Компания:</label>
 								</div>
 								<button type="submit" class="location__btn a-btn-2 animated slow wow bounceIn custom__btn">Свяжитесь с нами
@@ -5019,19 +5022,19 @@
 			<div class="custom__form-wrap">
 				<form action="" class="custom__form" method="POST">
 					<div class="custom__box-input">
-						<input class="custom__input" type="text" required>
+						<input class="custom__input" type="text" name="name" required>
 						<label class="custom__label">Имя:</label>
 					</div>
 					<div class="custom__box-input">
-						<input class="custom__input" type="text" required>
+						<input class="custom__input" type="text" name="email" required>
 						<label class="custom__label">Почта:</label>
 					</div>
 					<div class="custom__box-input">
-						<input class="custom__input" type="text" required>
+						<input class="custom__input" type="text" name="tel" required>
 						<label class="custom__label">Телефон:</label>
 					</div>
 					<div class="custom__box-input">
-						<input class="custom__input" type="text" required>
+						<input class="custom__input" type="text" name="company" required>
 						<label class="custom__label">Компания:</label>
 					</div>
 					<button type="submit" class="custom__btn a-btn-2 animated slow bounceIn">Свяжитесь с нами
@@ -5058,6 +5061,8 @@
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&callback=initMap&language=uk"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

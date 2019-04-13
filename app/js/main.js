@@ -188,9 +188,44 @@
       })
 
     })
+
+    $("[name=tel]").inputmask("+999999999999999");
+
+    $(".custom__form").on("submit", function(e){
+      e.preventDefault();
+
+      $(this).ajaxSubmit({
+        method: 'POST',
+        url: $(this).attr('action'),
+        success: function(responseText, statusText, xhr, $form){
+          $('.popup__form').css({
+            'opacity': 0,
+            'pointer-events': 'none'
+          })
+
+          $('.overlay').css({
+            'opacity': 0.722,
+            'pointer-events': 'visible'
+          })
+
+          $(".custom__form").trigger("reset");
+
+          $('.popup__ok').css({
+            'opacity': 1,
+            'pointer-events': 'visible'
+          })
+        },
+      });
+      return false;
+
+    })
   }
 
 
+  $(window).on('load', function() {
+    $(".preloader").css('opacity', 0);
+
+  });
 
   /***************/
   /* SCROLL MENU */
