@@ -5,7 +5,7 @@ $dark: #000
 $gray: rgb(247, 247, 247)
 $transition: all .35s ease
 $animation: fragment_1 backwards 40s ease-in-out infinite
-$animation_2: fragment_2 backwards 10s ease-in-out infinite
+$animation_2: fragment_2 backwards 40s ease-in-out infinite
 
 *
   font-family: "GothamProRegular"
@@ -208,10 +208,7 @@ a:hover
         left: calc(100% + 18px)
 
     &::before
-      margin-bottom: 30px
-      height: 180px
-      width: 3px
-      top: calc(-180px - 30px)
+      display: none
 
     &::after
       width: 80px
@@ -314,6 +311,9 @@ a:hover
   .header
     margin-bottom: 45px
 
+    &__red-svg
+      display: none
+
     &__svg
       width: 74vw
       bottom: -13vh
@@ -328,43 +328,24 @@ a:hover
 
 @media all and (max-width: 500px)
   .header
-    background-position: -15% 110% ,100% 78vh
-    background-size: 50%
-
     &__svg
       width: 95vw
       bottom: -10vh
 
-.st0
-  fill: #FFFFFF
+@media all and (max-width: 375px)
+  .header
+    margin-bottom: 0
 
-.st1
-  fill: #FF0000
+    &__svg
+      width: 120vw
+      bottom: -10vh
+      right: -60vw
 
-.st2
-  fill: none
-  stroke: $red
-  stroke-miterlimit: 100
-.st3
-  fill: none
-  stroke: $red
-  stroke-width: 1.5
-  stroke-miterlimit: 100
+    &__arrow
+      bottom: 15px
 
-.path
-  stroke-dasharray: 1000
-  stroke-dashoffset: 1000
-  animation: dash 5s linear alternate infinite
-
-
-@keyframes dash
-  from
-    stroke-dashoffset: 1000
-  to
-    stroke-dashoffset: 0
-
-
-
+    &::after
+      display: none
 
 /*******************/
 /****** MENU *******/
@@ -679,11 +660,23 @@ a:hover
 
 @media all and (max-width: 375px)
   .banner
+    &__content
+      text-align: center
+      padding-bottom: 80px
+
     &__title
-      font-size: 6vw
+      font-size: 4.9vw
+      padding-bottom: 30px
+
+      &::before
+        left: 50%
+        transform: translateX(-50%)
 
     &__desc
-      font-size: 18px
+      font-size: 4vw
+
+    &__title-bold
+      display: block
 
 
 
@@ -761,7 +754,10 @@ a:hover
 
 @media all and (max-width: 767px)
   .services
-    padding-top: 210px
+    padding-top: 85px
+
+    &::after
+      display: none
 
     &__items
       grid-template-columns: repeat(3, 1fr)
@@ -774,8 +770,6 @@ a:hover
 
 @media all and (max-width: 550px)
   .services
-    &::after
-      top: 87vh
 
     &__items
       grid-template-columns: repeat(2, 1fr)
@@ -789,6 +783,9 @@ a:hover
   .services
     &__item
       margin-bottom: 20px
+
+      img
+        width: 55px
 
     &__desc
       font-size: 16px
@@ -826,6 +823,9 @@ a:hover
 
   &__btn
     margin: 18px 0
+
+  &__right-btn
+    display: none
 
   &__wrap
     display: grid
@@ -949,7 +949,10 @@ a:hover
 
 @media all and (max-width: 767px)
   .facts
-    padding-top: 220px
+    padding-top: 85px
+
+    &::after
+      display: none
 
     &__wrap
       grid-template-columns: 1fr
@@ -980,11 +983,46 @@ a:hover
       margin-bottom: 45px
 
     &__items
-      padding-left: 35px
+      padding-left: 0
 
     &__item
       font-size: 16px
       padding-left: 60px
+      margin-bottom: 45px
+
+      &::before
+        background-size: 80%
+        background-repeat: no-repeat
+        background-position: left center
+
+    &__desc
+      font-size: 4vw
+      margin-bottom: 30px
+
+    &__left
+      &::before
+        display: none
+
+    &_btn
+      display: none
+
+    &__right
+      margin-top: 54px
+
+      &::before
+        left: -30px
+
+      &::after
+        display: none
+
+    &__right-btn
+      display: block
+      padding-top: 15px
+      background: 15px
+      text-align: center
+
+      a
+        color: #fff
 
 /***********************/
 /******* CLIENTS *******/
@@ -1039,6 +1077,11 @@ a:hover
 
 @media all and (max-width: 767px)
   .clients
+    padding-top: 140px
+
+    &::after
+      display: none
+
     &__items
       grid-template-columns: repeat(3, 1fr)
 
@@ -1051,6 +1094,9 @@ a:hover
     &__items
       grid-template-columns: repeat(2, 1fr)
 
+    &__item
+      img
+        max-width: 60%
 
 /********************/
 /******* INFO *******/
@@ -1259,7 +1305,7 @@ a:hover
         margin-top: -62px
 
     &__wrap
-      display: block
+      flex-direction: column-reverse
 
 
     &__slider-left
@@ -1286,7 +1332,7 @@ a:hover
       min-width: 100%
 
     &__slider-right
-      margin-top: 50px
+      margin-bottom: 50px
 
       .slick-slider
         &::before
@@ -1299,9 +1345,16 @@ a:hover
 
 @media all and (max-width: 767px)
   .info
+    padding-top: 85px
     &::after
-      left: -49vw
-      top: 35vh
+      display: none
+
+    &__slider-left
+      .slick-slide
+        min-height: 385px
+
+    &__btn
+      text-align: center
 
 @media all and (max-width: 550px)
   .info
@@ -1329,6 +1382,32 @@ a:hover
     &__desc
       max-height: 9.226em
       overflow: hidden
+
+@media all and (max-width: 375px)
+  .info
+    &__title
+      font-size: 5vw
+      margin-bottom: 30px
+
+    &__slider-right
+      margin-left: -15px
+      margin-right: -15px
+
+      .slick-slider
+        &::before
+          display: none
+
+      .slick-next,
+      .slick-prev
+        &::before
+          font-size: 20px
+
+      .slick-prev
+        left: 0
+
+      .slick-next
+        right: 0
+
 /************************/
 /******* PARTNERS *******/
 /************************/
@@ -1460,7 +1539,7 @@ a:hover
 
 @media all and (max-width: 767px)
   .partners
-    padding-top: 250px
+    padding-top: 125px
     $p: &
 
     #{$p}__wrap
@@ -1502,6 +1581,18 @@ a:hover
     #{$p}__subtitle
       font-size: 20px
       margin-bottom: 20px
+
+@media screen and (max-width: 375px)
+  .partners
+    $p: &
+
+    #{$p}__left
+      &::before
+        display: none
+
+    #{$p}__subtitle,
+    #{$p}__desc
+      font-size: 4.5vw
 
 /************************/
 /******* CONTACTS *******/
@@ -1579,7 +1670,6 @@ a:hover
     color: $dark
     line-height: 1
     text-transform: uppercase
-
   #{$p}__desc
     font-size: 22px
     color: $white
@@ -1589,6 +1679,9 @@ a:hover
 
     &:not(:first-of-type)
       margin-top: 65px
+
+  #{$p}__desc-bold
+    font-family: "GothamProBold"
 
   #{$p}__content
     margin-bottom: 85px
@@ -1636,7 +1729,6 @@ a:hover
 
     #{$p}__right
       padding-left: 0
-      padding-left: 0
 
       &::before
         top: 37px
@@ -1659,14 +1751,16 @@ a:hover
 
 @media all and (max-width: 767px)
   .contacts
-    margin-top: 220px
+    margin-top: 85px
     $p: &
+
+    &::after
+      display: none
 
     #{$p}__desc
       padding-right: 15px
 
     #{$p}__right
-      padding-left: 0
       padding-left: 0
 
       &::before
@@ -1684,7 +1778,6 @@ a:hover
 
     #{$p}__people
       grid-gap: 15px
-      grid-template-columns: 1fr
 
     #{$p}__content
       margin-bottom: 535px
@@ -1715,7 +1808,47 @@ a:hover
       &::after
         top: 620px
 
+@media screen and (max-width: 375px)
+  .contacts
+    $p: &
 
+    #{$p}__right
+      &::before
+        right: -30px
+        top: 15px
+        height: 104%
+
+      &::after
+        display: none
+
+    #{$p}__ava
+      height: 250px
+      top: 0
+
+    #{$p}__desc
+      font-size: 14px
+
+      &:not(:first-of-type)
+        margin-top: 40px
+
+    #{$p}__content
+      margin-left: 157px
+      margin-top: 40px
+      margin-bottom: 175px
+
+    #{$p}__name
+      font-size: 8vw
+
+    #{$p}__position
+      font-size: 8vw
+      margin-top: 10px
+
+    #{$p}__person-name
+      font-size: 15px
+
+
+    #{$p}__person-position
+      font-size: 15px
 
 /************************/
 /******* LOCATION *******/
@@ -1801,7 +1934,7 @@ a:hover
 
     #{$p}__wrap
       display: flex
-      flex-direction: column-reverse
+      flex-direction: column
 
     #{$p}__map
       width: 100%
@@ -1824,24 +1957,39 @@ a:hover
 
     #{$p}__map-wrap
       width: 100%
-      margin-top: 0
-      margin-bottom: 35px
+      margin-top: 50px
 
       &::before
         width: 100%
 
 @media all and (max-width: 767px)
   .location
-    padding-top: 220px
-    margin-bottom: 50px
+    padding-top: 85px
+    margin-bottom: 0
     $p: &
 
-    #{$p}__map-wrap
-      margin-bottom: 15px
+    &::after
+      display: none
 
     #{$p}__btn
       margin-top: 25px
 
+@media all and (max-width: 375px)
+  .location
+    $p: &
+
+    #{$p}__map-wrap
+      margin-left: -15px
+      margin-right: -15px
+
+      &::before
+        display: none
+
+    #{$p}__map
+      width: calc(100% + 30px)
+
+    #{$p}__btn
+      margin-top: 50px
 
 
 /**********************/
@@ -1977,6 +2125,15 @@ a:hover
 
     &__copy
       padding: 25px 0
+
+@media all and (max-width: 375px)
+  .footer
+    .menu__items-wrap
+      display: none
+
+    .menu__logo
+      img
+        width: 70%
 
 .overlay
   opacity: 0
