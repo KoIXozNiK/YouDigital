@@ -408,7 +408,8 @@ a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%; }
+        border-radius: 50%;
+        margin-bottom: 15px; }
     .menu__right {
       position: absolute;
       padding: 0;
@@ -502,10 +503,12 @@ a:hover {
         .menu__language-item.active::before {
           opacity: 1; }
       .menu__language-item:hover {
-        cursor: pointer; } }
+        cursor: pointer; }
+    .menu__logo-svg {
+      height: 50px; } }
 
 @media all and (max-width: 375px) {
-  .menu__logo img {
+  .menu__logo-svg {
     width: 70%; } }
 
 /*********************/
@@ -1602,6 +1605,8 @@ a:hover {
     .footer__form label {
       font-size: 16px;
       color: #fff; }
+  .footer__svg {
+    height: 50px; }
   .footer__subscribe-wrap {
     border: 2px solid #fff;
     padding: 14px 27px;
@@ -1663,7 +1668,7 @@ a:hover {
 @media all and (max-width: 375px) {
   .footer .menu__items-wrap {
     display: none; }
-  .footer .menu__logo img {
+  .footer__svg {
     width: 70%; } }
 
 .overlay {

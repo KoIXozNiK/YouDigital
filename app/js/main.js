@@ -59,6 +59,7 @@
         $('html, body').animate({
           'scrollTop': bannerHeight.top - 30
         }, 1100);
+        return false;
       });
     }
   }
@@ -269,7 +270,6 @@
   $(window).on('resize', function () {
     mobileMenu(),
     paginationNumber(),
-    goBot(),
     heightAva()
   });
 
