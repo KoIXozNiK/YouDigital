@@ -35,7 +35,8 @@ a:hover
   opacity: 1
   transition: $transition
 
-  img
+  &__svg
+    height: 50px
     animation: pulsing backwards 3s ease-in-out infinite
 
 /*********************/
@@ -261,6 +262,7 @@ a:hover
     top: 56vh
     width: 44%
     animation: $animation
+    pointer-events: none
 
   &__wrap
     overflow: hidden
@@ -1114,9 +1116,12 @@ a:hover
 @media all and (max-width: 550px)
   .clients
 
+    &__items
+      grid-template-columns: repeat(2, 1fr)
+
     &__item
       img
-        max-width: 40%
+        max-width: 60%
 
 /********************/
 /******* INFO *******/
@@ -2263,7 +2268,7 @@ a:hover
 
 @media all and (max-width: 550px)
   .popup__form
-    padding: 20px 15px
+    padding: 35px 15px 20px
 
     &-content
       margin-bottom: 20px
@@ -2275,7 +2280,8 @@ a:hover
       align-items: center
 
     &-close
-      display: none
+      top: 5px
+      right: 14px
 
   .popup__ok
     padding: 20px 15px

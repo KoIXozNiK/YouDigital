@@ -222,10 +222,8 @@
     })
   }
 
-
   $(window).on('load', function() {
     $(".preloader").css('opacity', 0);
-
   });
 
   /***************/

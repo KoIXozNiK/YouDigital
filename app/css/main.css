@@ -24,7 +24,8 @@ a:hover {
   pointer-events: none;
   opacity: 1;
   transition: all 0.35s ease; }
-  .preloader img {
+  .preloader__svg {
+    height: 50px;
     animation: pulsing backwards 3s ease-in-out infinite; }
 
 /*********************/
@@ -217,7 +218,8 @@ a:hover {
     left: -11vw;
     top: 56vh;
     width: 44%;
-    animation: fragment_1 backwards 40s ease-in-out infinite; }
+    animation: fragment_1 backwards 40s ease-in-out infinite;
+    pointer-events: none; }
   .header__wrap {
     overflow: hidden;
     position: relative; }
@@ -887,8 +889,10 @@ a:hover {
       max-width: 70%; } }
 
 @media all and (max-width: 550px) {
+  .clients__items {
+    grid-template-columns: repeat(2, 1fr); }
   .clients__item img {
-    max-width: 40%; } }
+    max-width: 60%; } }
 
 /********************/
 /******* INFO *******/
@@ -1760,7 +1764,7 @@ a:hover {
 
 @media all and (max-width: 550px) {
   .popup__form {
-    padding: 20px 15px; }
+    padding: 35px 15px 20px; }
     .popup__form-content {
       margin-bottom: 20px; }
     .popup__form-title {
@@ -1768,7 +1772,8 @@ a:hover {
     .popup__form .custom__form {
       align-items: center; }
     .popup__form-close {
-      display: none; }
+      top: 5px;
+      right: 14px; }
   .popup__ok {
     padding: 20px 15px; }
     .popup__ok-close {
