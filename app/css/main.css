@@ -82,6 +82,8 @@ a:hover {
 .custom__box-input {
   position: relative;
   width: 100%; }
+  .custom__box-input .error {
+    transition: all 0.35s ease; }
   .custom__box-input:not(:first-of-type) {
     margin-top: 30px; }
 

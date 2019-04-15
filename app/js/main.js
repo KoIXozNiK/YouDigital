@@ -154,6 +154,8 @@
       })
 
       $('html').css('overflow', 'hidden')
+
+
     })
 
     $('.overlay, .popup__form-close').on('click', function (e) {
@@ -167,30 +169,71 @@
       $('html').css('overflow', 'visible')
     })
 
-    // clear form
-    $(".custom__form").on("submit", function(e){
-      e.preventDefault();
+    $("[name=tel]").inputmask("+99999999999");
 
-      $('.popup__form').css({
-        'opacity': 0,
-        'pointer-events': 'none'
+    // VALIDATE FORMS
+    $(".custom__form").each(function () {
+      $(this).validate({
+        rules:{
+          name:{
+            required: true,
+            minlength: 3,
+            maxlength: 16,
+          },
+          email:{
+            required: true,
+            email: true
+          },
+          tel:{
+            required: true,
+          },
+          company:{
+            required: true,
+            minlength: 2,
+            maxlength: 32,
+          }
+        },
+
+        messages:{
+          name:{
+            required: "Это поле обязательно для заполнения",
+            minlength: "Логин должен быть минимум 3 символа",
+            maxlength: "Максимальное число символов - 16",
+          },
+          email:{
+            required: "Это поле обязательно для заполнения",
+            email: "Вы ввели некорректный e-mail"
+          },
+          tel:{
+            required: "Это поле обязательно для заполнения",
+          },
+          company:{
+            required: "Это поле обязательно для заполнения",
+            minlength: "Логин должен быть минимум 2 символа",
+            maxlength: "Максимальное число символов - 32",
+          }
+        },
+
+        submitHandler: function () {
+          $('.popup__form').css({
+            'opacity': 0,
+            'pointer-events': 'none'
+          })
+
+          $('.overlay').css({
+            'opacity': 0.722,
+            'pointer-events': 'visible'
+          })
+
+          $(".custom__form").trigger("reset");
+
+          $('.popup__ok').css({
+            'opacity': 1,
+            'pointer-events': 'visible'
+          })
+        }
       })
-
-      $('.overlay').css({
-        'opacity': 0.722,
-        'pointer-events': 'visible'
-      })
-
-      $(".custom__form").trigger("reset");
-
-      $('.popup__ok').css({
-        'opacity': 1,
-        'pointer-events': 'visible'
-      })
-
     })
-
-    $("[name=tel]").inputmask("+999999999999999");
 
     $(".custom__form").on("submit", function(e){
       e.preventDefault();
