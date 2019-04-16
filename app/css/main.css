@@ -1356,7 +1356,7 @@ a:hover {
   .contacts .contacts__person-ava {
     width: 100%; }
 
-@media all and (max-width: 1680px) {
+@media all and (max-width: 1820px) {
   .contacts .contacts__ava {
     top: 140px;
     opacity: .5; } }
