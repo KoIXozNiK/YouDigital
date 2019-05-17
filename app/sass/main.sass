@@ -19,6 +19,13 @@ a:hover
 .slow
   animation-duration: 1.4s
 
+.padding-10t
+  padding-top: 10px
+
+.centerSection
+  display: flex
+  align-items: center
+  height: 100%
 
 .preloader
   display: flex
@@ -1882,8 +1889,8 @@ a:hover
 /******* LOCATION *******/
 /************************/
 .location
-  padding-top: 380px
-  margin-bottom: 150px
+
+  padding-top: 350px
   position: relative
   $p: &
 
@@ -1944,17 +1951,39 @@ a:hover
     &-bold
       font-family: "GothamProBold"
 
+@media all and (min-width: 1200px)
+  .location
+    $p: &
+
+    #{$p}__wrap
+      margin-bottom: 150px
+
 @media all and (max-width: 1199px)
   .location
-    margin-bottom: 110px
     $p: &
 
     #{$p}__map-wrap
       margin-top: -151px
 
+@media all and (min-width: 1025px)
+  .location
+    $p: &
+
+    #{$p}__heading
+      padding-top: 20px
+
+    #{$p}__wrap
+      margin-bottom: 110px
+
+@media all and (max-width: 1024px)
+  .location
+    $p: &
+
+    #{$p}__wrap
+      margin-bottom: 110px
+
 @media all and (max-width: 991px)
   .location
-    margin-bottom: 80px
     $p: &
 
     &::after
@@ -1963,6 +1992,8 @@ a:hover
     #{$p}__wrap
       display: flex
       flex-direction: column
+      margin-bottom: 80px
+
 
     #{$p}__map
       width: 100%
@@ -1993,7 +2024,6 @@ a:hover
 @media all and (max-width: 767px)
   .location
     padding-top: 85px
-    margin-bottom: 0
     $p: &
 
     &::after
@@ -2001,6 +2031,9 @@ a:hover
 
     #{$p}__btn
       margin-top: 25px
+
+    #{$p}__wrap
+      margin-bottom: 0
 
 @media all and (max-width: 375px)
   .location

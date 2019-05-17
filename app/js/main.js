@@ -289,6 +289,12 @@
   }
 
 
+  if($(window).width() > 1024) {
+    $.scrollify({
+      section : ".scrollSection",
+    });
+  }
+
   /**********************************/
   /* FUNCTION INITIALIZATION */
   /**********************************/
